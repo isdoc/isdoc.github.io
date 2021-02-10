@@ -1,0 +1,363 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>ISDOC – Národní standard pro elektronickou fakturaci</title><style type="text/css">
+
+/********************************/
+/* start of styles in block.xsl */
+
+.formalpara-title {
+  font-weight: bold;
+}
+
+div.blockquote-title {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+span.msgmain-title {
+  font-weight: bold;
+}
+
+span.msgsub-title {
+  font-weight: bold;
+}
+
+span.msgrel-title {
+  font-weight: bold;
+}
+
+div.msglevel, div.msgorig, div.msgaud {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+span.msglevel-title, span.msgorig-title, span.msgaud-title {
+  font-weight: bold;
+}
+
+div.msgexplan {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+span.msgexplan-title {
+  font-weight: bold;
+}
+
+/* end of styles in block.xsl */
+/********************************/
+
+/********************************/
+/* start of styles in autotoc.xsl */
+
+
+/* end of styles in autotoc.xsl */
+/********************************/
+
+/********************************/
+/* start of styles in formal.xsl */
+
+div.figure-title {
+  font-weight: bold;
+}
+
+div.example-title {
+  font-weight: bold;
+}
+
+div.equation-title {
+  font-weight: bold;
+}
+
+div.table-title {
+  font-weight: bold;
+}
+
+div.sidebar-title {
+  font-weight: bold;
+}
+
+
+/* end of styles in formal.xsl */
+/********************************/
+
+/********************************/
+/* start of styles in verbatim.xsl */
+
+div.programlisting {
+  white-space: pre;
+  font-family: monospace;
+}
+
+div.screen {
+  white-space: pre;
+  font-family: monospace;
+}
+
+div.synopsis {
+  white-space: pre;
+  font-family: monospace;
+}
+
+/* end of styles in verbatim.xsl */
+/********************************/
+
+/* footnote rule */
+hr.footnote-hr {
+  width: 100;
+}
+
+</style><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" />
+      <meta charset="utf-8" /><style type="text/css">
+    .screen, .programlisting, .literallayout { background-color: #F0F0F0; }
+    body { font-family: Verdana, sans-serif; 
+           background-attachment: fixed; 
+           background-position: center center; 
+	   max-width: 50em;
+	   margin-left: auto;
+	   margin-right: auto; }
+    .article > .titlepage { text-align: center; background-color: #f8b439; padding-top: 0.5em; }
+    .title { color: navy;  }
+    .section .titlepage, .bibliography .titlepage { text-align: left; }
+    .remark { color: red;
+              background-color: yellow;
+	      font-style: italics;
+	    }
+     :link { color: red; text-decoration: none; }
+     :visited { color: red; text-decoration: none; }
+     a:hover { text-decoration: underline; }
+     .note { font-size: smaller; margin-left: 4em; margin-right: 4em; }
+    </style></head>
+   <body>
+      <section xml:lang="cs" class="article" id="d5e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h1 class="title">ISDOC – Národní standard pro elektronickou fakturaci</h1>
+               </div>
+               <div>
+                  <h3 class="subtitle"><em>Verze 6.0.2 z 10.2.2021</em></h3>
+               </div>
+               <div>
+                  <p class="copyright">Copyright © 2014 ICT UNIE o.s.</p>
+               </div>
+            </div>
+            <hr />
+         </div>
+         <p>Přiložený standard a schémata formálně definují výměnný formát daňových dokladů a
+            dalších typů dokumentů definovaný Pracovní skupinou pro elektronické standardy výměny dat sdružení ICT
+            Unie o.s. (<a class="link" href="http://www.isdoc.cz" target="_top">www.isdoc.cz</a>).
+         </p>
+         <p>Dotazy posílejte na <code class="email"><a class="email" href="mailto:info@isdoc.cz">info@isdoc.cz</a></code>.
+         </p>
+         <section class="section" id="d5e12">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">Obsah distribuce</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="variablelist">
+               <dl class="variablelist">
+                  <dt><span class="term"><code class="filename">doc/</code></span></dt>
+                  <dd>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc/isdoc.pdf" target="_top">isdoc.pdf</a></code></span></dt>
+                           <dd>
+                              <p>Standard ISDOC 6.0.2</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc/isdoc.html" target="_top">isdoc.html</a></code></span></dt>
+                           <dd>
+                              <p>HTML verze standardu</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">xsd/</code></span></dt>
+                  <dd>
+                     <p>Schémata v jazyce W3C XML Schema</p>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-invoice-6.0.2.xsd" target="_top">isdoc-invoice-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Základní schéma daňového dokladu</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-invoice-dsig-6.0.2.xsd" target="_top">isdoc-invoice-dsig-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Schéma validující i strukturu vloženého digitálního podpisu</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-commondocument-6.0.2.xsd" target="_top">isdoc-commondocument-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Základní schéma neplatebního bankovního dokladu</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-commondocument-dsig-6.0.2.xsd" target="_top">isdoc-commondocument-dsig-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Schéma validující i strukturu vloženého digitálního podpisu</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/xmldsig-core-schema.xsd" target="_top">xmldsig-core-schema.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Schéma XML
+                                 Signature
+                              </p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="xsd/isdoc-manifest-6.0.2.xsd" target="_top">isdoc-manifest-6.0.2.xsd</a></code></span></dt>
+                           <dd>
+                              <p>Schéma pro manifest ISDOC archivů.</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">sch/</code></span></dt>
+                  <dd>
+                     <p>Schematron schéma pro kontrolu pravidel</p>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="sch/isdoc-6.0.2.sch" target="_top">isdoc-6.0.2.sch</a></code></span></dt>
+                           <dd>
+                              <p>Kontrola vybraných pravidel pomocí Schematronu</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">doc-cs/</code></span></dt>
+                  <dd>
+                     <p>Hypertextová dokumentace W3C XML Schematu s českými komentáři</p>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc-cs/isdoc-invoice-6.0.2.html" target="_top">isdoc-invoice-6.0.2.html</a></code></span></dt>
+                           <dd>
+                              <p>Dokumentace pro daňový doklad</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc-cs/isdoc-commondocument-6.0.2.html" target="_top">isdoc-commondocument-6.0.2.html</a></code></span></dt>
+                           <dd>
+                              <p>Dokumentace pro neplatební bankovní dokument</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">doc-en/</code></span></dt>
+                  <dd>
+                     <p>Hypertextová dokumentace W3C XML Schematu s anglickými komentáři</p>
+                     <div class="variablelist">
+                        <dl class="variablelist">
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc-en/isdoc-invoice-6.0.2.html" target="_top">isdoc-invoice-6.0.2.html</a></code></span></dt>
+                           <dd>
+                              <p>Dokumentace pro daňový doklad</p>
+                           </dd>
+                           <dt><span class="term"><code class="filename"><a class="filename" href="doc-en/isdoc-commondocument-6.0.2.html" target="_top">isdoc-commondocument-6.0.2.html</a></code></span></dt>
+                           <dd>
+                              <p>Dokumentace pro neplatební bankovní dokument</p>
+                           </dd>
+                        </dl>
+                     </div>
+                  </dd>
+                  <dt><span class="term"><code class="filename">examples/</code></span></dt>
+                  <dd>
+                     <p>Ukázkové dokumenty ISDOC.</p>
+                     <p class="remark"><em><span class="remark">FIXME: Doplnit další příklady (eGov, digitální podpis, časové razítko).</span></em></p>
+                  </dd>
+               </dl>
+            </div>
+         </section>
+         <section xml:lang="cs" class="appendix" id="chagelog">
+            <h2 class="title" style="clear: both">Změny oproti předchozím verzím</h2>
+            <section class="section" id="d5e117">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title">Změny oproti verzi 6.0.1 z 26.5.2014</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="itemizedlist">
+                  <ul class="itemizedlist" style="list-style-type: disc; ">
+                     <li class="listitem">
+                        <p>Vylepšení popisu některých elementů.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Schéma kontroluje unikátnost identifikátoru řádky dokladu.</p>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <section class="section" id="d5e124">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title">Změny oproti verzi 5.3.1 z 30.12.2011</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="itemizedlist">
+                  <ul class="itemizedlist" style="list-style-type: disc; ">
+                     <li class="listitem">
+                        <p>Změněn jmenný prostor na <code class="uri">http://isdoc.cz/namespace/2013</code></p>
+                     </li>
+                     <li class="listitem">
+                        <p>Odkazy na objednávky (<code class="sgmltag-element">OrderReference</code>), dodací listy (<code class="sgmltag-element">DeliveryNoteReference</code>) a
+                           původní doklady (<code class="sgmltag-element">OriginalDocumentReference</code>) se uvádějí jen globálně pro celou fakturu. U řádky může již být jen odkaz, který pomocí atributu ref směřuje na existující
+                           globální
+                           odkaz identifikovaný pomocí atributu id. Nad hodnotami v atributech id a ref schéma
+                           kontroluje referenční integritu.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Elementy <code class="sgmltag-element">VATApplicable</code> a <code class="sgmltag-element">ElectronicPossibilityAgreementReference</code> jsou ve schématu povinné
+                           (povinné jsou již od verze 5.3, povinnost však nebyla formálně popsána ve schématu).
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Upraveno pořadí podelementů uvnitř elementu <code class="sgmltag-element">TaxSubTotal</code> tak, aby bylo konzistentní.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Element <code class="sgmltag-element">OriginalDocumentReference</code> musí být vždy obalen v <code class="sgmltag-element">OriginalDocumentReferences</code>.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Přidán element <code class="sgmltag-element">ClientBankAccount</code> pro velké výstavce B2C faktur.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Přidány elementy <code class="sgmltag-element">SubDocumentType</code> a  <code class="sgmltag-element">SubDocumentTypeOrigin</code> pro jemnější klasifikaci dokumentů.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Přidány elementy <code class="sgmltag-element">EgovFlag</code>, <code class="sgmltag-element">FileReference</code>, <code class="sgmltag-element">ReferenceNumber</code>, <code class="sgmltag-element">ISDS_ID</code>,
+                           <code class="sgmltag-element">EgovClassifiers</code>, <code class="sgmltag-element">EgovClassifier</code>, <code class="sgmltag-element">ContractReferences</code>, <code class="sgmltag-element">ContractReference</code>,
+                           <code class="sgmltag-element">LastValidDate</code>, <code class="sgmltag-element">LastValidDateUnbounded</code>, <code class="sgmltag-element">ExternalOrderIssueDate</code>, <code class="sgmltag-element">ParagraphID</code>,
+                           <code class="sgmltag-element">SealSeriesID</code>.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>K elementu <code class="sgmltag-element">Payment</code> byl přidán nový atribut partialPayment, který může být použit k zakázání částečných plateb.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Pořadí elementů uvnitř elementu <code class="sgmltag-element">Invoice</code> bylo upraveno.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Element <code class="sgmltag-element">PartyTaxScheme</code> se může opakovat a u subjektu lze zadat více jeho identifikátorů (např. zároveň DIČ a IČ DPH pro slovenské společnosti).
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Do archivu (<code class="filename">.isdocx</code>) byla přidána povinnost používat
+                           manifest. Manifest je soubor určující, který soubor ISDOC z mnoha v archivu
+                           existujících je hlavní. Všechny ostatní jsou pak jen v pozici přílohy.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Přidán nový typ dokumentu neplatební dokument (element <code class="sgmltag-element">CommonDocument</code>).
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+         </section>
+      </section>
+   </body>
+</html>
