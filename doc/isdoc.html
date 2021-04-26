@@ -147,15 +147,19 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <h3 class="subtitle"><em>Národní standard pro elektronickou fakturaci</em></h3>
                </div>
                <div>
-                  <p class="releaseinfo">Tento dokument byl v době svého publikování ve fázi návrhu. Kdykoliv se může změnit a být nahrazen novější verzí.
-                     Informace o aktuální verzi standardu ISDOC naleznete na adrese <a class="link" href="http://isdoc.cz" target="_top">http://isdoc.cz</a>.
+                  <p class="releaseinfo">Tento dokument byl v době svého publikování ve fázi návrhu. Kdykoliv se může změnit
+                     a být nahrazen novější verzí. Informace o aktuální verzi standardu ISDOC naleznete na adrese
+                             <a class="link" href="http://isdoc.cz" target="_top">http://isdoc.cz</a>.
                   </p>
+               </div>
+               <div>
+                  <p class="copyright">Copyright © 2021 MVČR</p>
                </div>
                <div>
                   <p class="copyright">Copyright © 2014 ICT UNIE o.s.</p>
                </div>
                <div>
-                  <p class="pubdate">15. února 2021</p>
+                  <p class="pubdate">26. dubna 2021</p>
                </div>
             </div>
             <hr />
@@ -175,7 +179,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </li>
                <li><span class="section"><a href="#reprezentace">3. Reprezentace dokumentu</a></span><ul>
                      <li><span class="section"><a href="#reprezentace-xml">3.1. Dokument XML</a></span></li>
-                     <li><span class="section"><a href="#archiv">3.2. Archiv</a></span></li>
+                     <li><span class="section"><a href="#reprezentace-isdoc.pdf">3.2. ISDOC.PDF</a></span></li>
+                     <li><span class="section"><a href="#archiv">3.3. Archiv</a></span></li>
                   </ul>
                </li>
                <li><span class="section"><a href="#pravidla">4. Pravidla</a></span><ul>
@@ -195,20 +200,20 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </li>
                <li><span class="appendix"><a href="#poznamky">A. Implementační poznámky</a></span><ul>
                      <li><span class="section"><a href="#poznamky-maximalni-export">A.1. Zásada exportu maximálního množství informací</a></span></li>
-                     <li><span class="section"><a href="#d5e545">A.2. Výpočet DPH</a></span></li>
-                     <li><span class="section"><a href="#d5e550">A.3. Výpočet celkové ceny z jednotkové a počtu kusů</a></span></li>
-                     <li><span class="section"><a href="#d5e559">A.4. Identifikátory</a></span></li>
-                     <li><span class="section"><a href="#d5e568">A.5. Vyplňování položek v souladu s legislativou</a></span></li>
-                     <li><span class="section"><a href="#d5e592">A.6. Finanční částky</a></span></li>
-                     <li><span class="section"><a href="#d5e616">A.7. Použití typů UUIDType a ID36Type</a></span></li>
-                     <li><span class="section"><a href="#d5e620">A.8. Uživatelské elementy</a></span></li>
-                     <li><span class="section"><a href="#d5e626">A.9. Zúčtovací faktura</a></span></li>
-                     <li><span class="section"><a href="#d5e632">A.10. Vztahy mezi údaji uváděnými uvnitř elementů <code class="sgmltag-element">TaxTotal</code> a
+                     <li><span class="section"><a href="#d5e665">A.2. Výpočet DPH</a></span></li>
+                     <li><span class="section"><a href="#d5e670">A.3. Výpočet celkové ceny z jednotkové a počtu kusů</a></span></li>
+                     <li><span class="section"><a href="#d5e679">A.4. Identifikátory</a></span></li>
+                     <li><span class="section"><a href="#d5e688">A.5. Vyplňování položek v souladu s legislativou</a></span></li>
+                     <li><span class="section"><a href="#d5e712">A.6. Finanční částky</a></span></li>
+                     <li><span class="section"><a href="#d5e736">A.7. Použití typů UUIDType a ID36Type</a></span></li>
+                     <li><span class="section"><a href="#d5e740">A.8. Uživatelské elementy</a></span></li>
+                     <li><span class="section"><a href="#d5e746">A.9. Zúčtovací faktura</a></span></li>
+                     <li><span class="section"><a href="#d5e752">A.10. Vztahy mezi údaji uváděnými uvnitř elementů <code class="sgmltag-element">TaxTotal</code> a
                                         <code class="sgmltag-element">TaxSubTotal</code></a></span></li>
-                     <li><span class="section"><a href="#d5e653">A.11. Vztahy mezi údaji uvnitř elementu <code class="sgmltag-element">LegalMonetaryTotal</code></a></span></li>
-                     <li><span class="section"><a href="#d5e677">A.12. Identifikace zápisu v rejstříku</a></span></li>
-                     <li><span class="section"><a href="#d5e684">A.13. Informace o platbě</a></span></li>
-                     <li><span class="section"><a href="#d5e693">A.14. Vizuální podoba dokumentu</a></span></li>
+                     <li><span class="section"><a href="#d5e773">A.11. Vztahy mezi údaji uvnitř elementu <code class="sgmltag-element">LegalMonetaryTotal</code></a></span></li>
+                     <li><span class="section"><a href="#d5e797">A.12. Identifikace zápisu v rejstříku</a></span></li>
+                     <li><span class="section"><a href="#d5e804">A.13. Informace o platbě</a></span></li>
+                     <li><span class="section"><a href="#d5e813">A.14. Vizuální podoba dokumentu</a></span></li>
                   </ul>
                </li>
                <li><span class="appendix"><a href="#schema">B. Schémata pro jednotlivé typy dokumentů</a></span><ul>
@@ -219,14 +224,16 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </li>
                <li><span class="appendix"><a href="#schematron">C. Schéma pro kontrolu vybraných pravidel – <code class="filename"><a class="filename" href="../sch/isdoc-6.0.2.sch" target="_top">isdoc-6.0.2.sch</a></code></a></span></li>
                <li><span class="appendix"><a href="#chagelog">D. Změny oproti předchozím verzím</a></span><ul>
-                     <li><span class="section"><a href="#d5e725">D.1. Změny oproti verzi 6.0.1 z 26.5.2014</a></span></li>
-                     <li><span class="section"><a href="#d5e734">D.2. Změny oproti verzi 5.3.1 z 30.12.2011</a></span></li>
+                     <li><span class="section"><a href="#d5e845">D.1. Změny oproti verzi 6.0.1 z 26.5.2014</a></span></li>
+                     <li><span class="section"><a href="#d5e856">D.2. Změny oproti verzi 5.3.1 z 30.12.2011</a></span></li>
                   </ul>
                </li>
-               <li><span class="appendix"><a href="#d5e793">E. Možné změny pro další verze</a></span></li>
-               <li><span class="bibliography"><a href="#d5e801">Reference</a></span></li>
+               <li><span class="appendix"><a href="#d5e915">E. Možné změny pro další verze</a></span></li>
+               <li><span class="bibliography"><a href="#d5e923">Reference</a></span></li>
             </ul>
          </div>
+         <p class="remark"><em><span class="remark">Tento dokument je ve fázi návrhu. Jakékoliv připomínky a chyby prosím nahlaste pomocí
+                  <a class="link" href="https://github.com/isdoc/schema/issues" target="_top">https://github.com/isdoc/schema/issues</a>.</span></em></p>
          <section class="section" id="uvod">
             <div class="titlepage">
                <div>
@@ -236,12 +243,13 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </div>
             </div>
             <p>Tento dokument definuje formáty pro elektronickou fakturaci souhrnně označované zkratkou
-               ISDOC. Formát byl definován a je nadále rozvíjen pracovní skupinou pro elektronické standardy
-               výměny dat <a class="link" href="http://www.ictu.cz/" target="_top">ICT Unie o.s.</a>. Veškeré připomínky a
-               dotazy k formátu a jeho specifikaci zasílejte na adresu <code class="email"><a class="email" href="mailto:info@isdoc.cz">info@isdoc.cz</a></code>.
+               ISDOC. Formát byl původně definován pracovní skupinou pro elektronické standardy výměny dat
+               <a class="link" href="http://www.ictu.cz/" target="_top">ICT Unie o.s.</a>. Nyní se o další rozvoj a údržbu
+               formátu stará Ministerstvo vnitra České Republiky. Veškeré připomínky a dotazy k formátu a
+               jeho specifikaci zasílejte na adresu <code class="email"><a class="email" href="mailto:info@isdoc.cz">info@isdoc.cz</a></code>.
             </p>
-            <p>V současné verzi ISDOC definuje formát pro fakturu a neplatební dokument, v dalších verzích může
-               být přidána podpora pro další formáty.
+            <p>V současné verzi ISDOC definuje formát pro fakturu a neplatební dokument, v dalších
+               verzích může být přidána podpora pro další formáty.
             </p>
             <section class="section" id="konvence">
                <div class="titlepage">
@@ -349,9 +357,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                                  </p>
                               </li>
                               <li class="listitem">
-                                 <p>Pokud se jedná o neplatební dokument, musí být validní vůči schématu uvedenému v části
-                                    <a class="xref" href="#schema-commondocument" title="B.2. Schéma pro neplatební dokument – isdoc-commondocument-6.0.2.xsd">B.2 – „Schéma pro neplatební dokument – <code class="filename"></code></a><a class="filename" href="../xsd/isdoc-commondocument-6.0.2.xsd" target="_top">isdoc-commondocument-6.0.2.xsd</a><a class="xref" href="#schema-commondocument" title="B.2. Schéma pro neplatební dokument – isdoc-commondocument-6.0.2.xsd"><code class="filename"></code>“</a> a jako kořenový element musí být použit element
-                                    <code class="sgmltag-element">CommonDocument</code>.
+                                 <p>Pokud se jedná o neplatební dokument, musí být validní vůči schématu uvedenému
+                                    v části <a class="xref" href="#schema-commondocument" title="B.2. Schéma pro neplatební dokument – isdoc-commondocument-6.0.2.xsd">B.2 – „Schéma pro neplatební dokument – <code class="filename"></code></a><a class="filename" href="../xsd/isdoc-commondocument-6.0.2.xsd" target="_top">isdoc-commondocument-6.0.2.xsd</a><a class="xref" href="#schema-commondocument" title="B.2. Schéma pro neplatební dokument – isdoc-commondocument-6.0.2.xsd"><code class="filename"></code>“</a> a jako kořenový element musí být
+                                    použit element <code class="sgmltag-element">CommonDocument</code>.
                                  </p>
                               </li>
                            </ul>
@@ -362,11 +370,13 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </p>
                      </li>
                      <li class="listitem">
-                        <p>Pokud je dokument opatřen digitálním podpisem, musí splňovat požadavky definované v části <a class="xref" href="#podpis" title="5. Digitální podpisy">5 – „Digitální podpisy“</a>.
+                        <p>Pokud je dokument opatřen digitálním podpisem, musí splňovat požadavky definované
+                           v části <a class="xref" href="#podpis" title="5. Digitální podpisy">5 – „Digitální podpisy“</a>.
                         </p>
                      </li>
                      <li class="listitem">
-                        <p>Pokud je dokument opatřen časovým razítkem, musí splňovat požadavky definované v části <a class="xref" href="#razitko" title="6. Časové razítko">6 – „Časové razítko“</a>.
+                        <p>Pokud je dokument opatřen časovým razítkem, musí splňovat požadavky definované
+                           v části <a class="xref" href="#razitko" title="6. Časové razítko">6 – „Časové razítko“</a>.
                         </p>
                      </li>
                   </ol>
@@ -413,16 +423,20 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   </div>
                </div>
             </div>
-            <p>Dokument ISDOC musí být reprezentován jako samostatný dokument XML nebo jako archiv. Pro
-               samostatné dokumenty je doporučeno používat příponu <code class="filename">.isdoc</code> a pro archivy
-               <code class="filename">.isdocx</code>.
+            <p>Dokument ISDOC musí být reprezentován jako samostatný dokument XML, jako PDF/A-3 dokument
+               (tzv. ISDOC.PDF) nebo jako archiv. Pro samostatné dokumenty je doporučeno používat příponu
+               <code class="filename">.isdoc</code> a pro archivy <code class="filename">.isdocx</code>. Jméno dokumentů
+               ISDOC.PDF by mělo být zakončeno řetězcem <code class="filename">-isdoc.pdf</code>.
             </p>
             <div class="note">
                <h3 class="title">Poznámka</h3>
                <p>Samostatný dokument je preferovaná forma pro výměnu dokumentů ISDOC. Je vhodná například
-                  při komunikace pomocí webových služeb či pro zasílání dokumentů pomocí elektronické pošty
+                  při komunikaci pomocí webových služeb či pro zasílání dokumentů pomocí elektronické pošty
                   nebo datových schránek. Reprezentace pomocí archivu je vhodná v případech, kdy chceme kromě
-                  samotného dokladu přenášet i další související přílohy jako jeden celek.
+                  samotného dokladu přenášet i další související přílohy jako jeden celek. Reprezentace
+                  ISDOC.PDF je vhodná v případě, kdy chceme příjemci dokladu umožnit snadnou vizuální kontrolu
+                  a přitom zachovat možnost strojového zpracování. ISDOC.PDF dovoluje i přenos souvisejících
+                  příloh.
                </p>
             </div>
             <section class="section" id="reprezentace-xml">
@@ -436,11 +450,194 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                <p>ISDOC musí být well-formed dokument XML tak jak definuje specifikace <a class="xref" href="#bib.xml" title="Extensible Markup Language (XML) 1.0 (Fifth Edition).">[<abbr class="abbrev">XML</abbr>]</a> a musí být uložen v kódování UTF-8.
                </p>
             </section>
+            <section class="section" id="reprezentace-isdoc.pdf">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title">3.2. ISDOC.PDF</h3>
+                     </div>
+                  </div>
+               </div>
+               <p>ISDOC.PDF dokument musí splňovat všechny požadavky formátu PDF/A-3a, tak jak je definuje
+                  <a class="xref" href="#bib.iso19005-3" title="Document management – Electronic document file format for long-term preservation – Part 3: Use of ISO 32000-1 with support for embedded files (PDF/A-3).">[<abbr class="abbrev">ISO 19005-3</abbr>]</a>, a navíc musí dodržet všechny následující
+                  požadavky:
+               </p>
+               <p class="remark"><em><span class="remark">Není požadavek na PDF/A-3a moc striktní, nestačilo by PDF/A-3u, aby to bylo snazší pro
+                        implementátory?</span></em></p>
+               <div class="orderedlist">
+                  <ol class="orderedlist" type="1">
+                     <li class="listitem">
+                        <p>Do ISDOC.PDF dokumentu je vložen dokument ISDOC využívající XML reprezentaci (<a class="xref" href="#reprezentace-xml" title="3.1. Dokument XML">3.1 – „Dokument XML“</a>). Vložený dokument musí být pojmenovaný
+                           <code class="filename">invoice.isdoc</code>.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Pokud je příjemcem dokumentu veřejná správa, je do ISDOC.PDF dokumentu vložen soubor
+                           pojmenovaný <code class="filename">metadata-invoice-nsessl.xml</code>, který obsahuje metadata
+                           nezbytná pro automatický příjem dokumentu do elektronické spisové služby. Obsah souboru
+                           s metadaty musí splňovat požadavky definované v [<em><span class="remark">Asi bude praktické mít formát
+                                 metadat popsaný v samostatném standardu MVČR.</span></em>].
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Dokument ISDOC.PDF může obsahovat další vložené dokumenty a soubory.</p>
+                     </li>
+                  </ol>
+               </div>
+               <section class="section" id="d5e129">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title">3.2.1. Vložené soubory</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <p>Pro vložení dokumentu ISDOC a případných metadat a příloh dokladu se musí používat
+                     slovník <span class="emphasis"><em>File Specification Dictionary</em></span> (viz <a class="xref" href="#bib.iso32000-1" title="Document management – Portable document format – Part 1: PDF 1.7.">[<abbr class="abbrev">ISO 32000-1</abbr>]</a>, sekce 7.11.3). Ten přitom musí být odkazován pomocí položky
+                     <code class="code">AF</code> ze slovníku <code class="code">Catalog</code> (viz <a class="xref" href="#bib.iso19005-3" title="Document management – Electronic document file format for long-term preservation – Part 3: Use of ISO 32000-1 with support for embedded files (PDF/A-3).">[<abbr class="abbrev">ISO 19005-3</abbr>]</a>,
+                     příloha E.3). Zároveň musí být každý vložený soubor uveden i ve slovníku <span class="emphasis"><em>Name
+                           Dictionary</em></span> (viz <a class="xref" href="#bib.iso32000-1" title="Document management – Portable document format – Part 1: PDF 1.7.">[<abbr class="abbrev">ISO 32000-1</abbr>]</a>, sekce 7.7.4) ve stromu jmen
+                     odkazovaném pomocí položky <code class="code">EmbeddedFiles</code>. Tím se zajistí, že běžné prohlížeče
+                     PDF zobrazí vložené soubory jako přílohy.
+                  </p>
+                  <p>Pro každý vložený soubor musí odpovídající objekt slovníku obsahovat minimálně položky
+                     uvedené v tabulce <a class="xref" href="#tab.filespec-required" title="Tabulka 1. Povinné položky ve slovníku popisujícím vložený soubor">1 – „Povinné položky ve slovníku popisujícím vložený soubor“</a>. 
+                  </p>
+                  <div class="table" id="tab.filespec-required">
+                     <div class="table-title">Tabulka 1. Povinné položky ve slovníku popisujícím vložený soubor</div>
+                     <div class="table-contents">
+                        <table style="border-collapse: collapse; border-top: 1px solid ; border-bottom: 1px solid ; border-left: 1px solid ; border-right: 1px solid ; ">
+                           <colgroup>
+                              <col class="c1" />
+                              <col class="c2" />
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 1px solid ; border-bottom: 1px solid ; ">Klíč</th>
+                                 <th style="border-bottom: 1px solid ; ">Hodnota</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-right: 1px solid ; border-bottom: 1px solid ; "><code class="code">/Type</code></td>
+                                 <td style="border-bottom: 1px solid ; ">Vždy <code class="code">/Filespec</code></td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 1px solid ; border-bottom: 1px solid ; "><code class="code">/F</code></td>
+                                 <td style="border-bottom: 1px solid ; ">Jméno souboru. Pro vložený dokument ISDOC je to vždy
+                                                        <code class="filename">invoice.isdoc</code>, pro metadata pro veřejnou správu je to vždy
+                                                        <code class="filename">metadata-invoice-nsessl.xml</code>. Pro ostatní vložené soubory je
+                                                      to jejich jméno.
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 1px solid ; border-bottom: 1px solid ; "><code class="code">/UF</code></td>
+                                 <td style="border-bottom: 1px solid ; ">Jméno souboru. Obsahuje stejnou hodnotu jako položka <code class="code">F</code>.
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 1px solid ; border-bottom: 1px solid ; "><code class="code">/AFRelationship</code></td>
+                                 <td style="border-bottom: 1px solid ; ">
+                                                      
+                                    <p>Popisuje vztah vloženého souboru k dokumentu PDF. Přípustné jsou následující
+                                                           hodnoty:
+                                    </p>
+                                                      
+                                    <div class="variablelist">
+                                       <dl class="variablelist">
+                                          <dt><span class="term"><code class="code">/Source</code></span></dt>
+                                          <dd>
+                                             <p>Použije se, pokud bylo PDF vygenerováno přímo z ISDOC
+                                                                          dokumentu.
+                                             </p>
+                                          </dd>
+                                          <dt><span class="term"><code class="code">/Alternative</code></span></dt>
+                                          <dd>
+                                             <p>Použije se, pokud PDF i dokument ISDOC byly vygenerovány nezávisle na
+                                                                          sobě – např. z databáze nebo objektového modelu v aplikaci – a jedná se
+                                                                          tak o alternativní reprezentace stejných dat, ale žádná z nich není
+                                                                          primárním zdrojem dat.
+                                             </p>
+                                          </dd>
+                                          <dt><span class="term"><code class="code">/Supplement</code></span></dt>
+                                          <dd>
+                                             <p>Použije se pro všechny vložené soubory s výjimkou vloženého dokumentu
+                                                                          ISDOC.
+                                             </p>
+                                          </dd>
+                                       </dl>
+                                    </div>
+                                                    
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 1px solid ; "><code class="code">/EF</code></td>
+                                 <td>Slovník, který obsahuje položky <code class="code">F</code> a <code class="code">UF</code>, které
+                                                      obsahují vložený souborový proud (viz <a class="xref" href="#bib.iso32000-1" title="Document management – Portable document format – Part 1: PDF 1.7.">[<abbr class="abbrev">ISO 32000-1</abbr>]</a>, sekce
+                                                      7.11.4). Slovník souborového proudu musí povinně obsahovat položky uvedené v tabulce <a class="xref" href="#tab.embededfile-required" title="Tabulka 2. Povinné položky ve slovníku popisujícím souborový proud">2 – „Povinné položky ve slovníku popisujícím souborový proud“</a>.
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div><br class="table-break" /><div class="table" id="tab.embededfile-required">
+                     <div class="table-title">Tabulka 2. Povinné položky ve slovníku popisujícím souborový proud</div>
+                     <div class="table-contents">
+                        <table style="border-collapse: collapse; border-top: 1px solid ; border-bottom: 1px solid ; border-left: 1px solid ; border-right: 1px solid ; ">
+                           <colgroup>
+                              <col class="c1" />
+                              <col class="c2" />
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 1px solid ; border-bottom: 1px solid ; ">Klíč</th>
+                                 <th style="border-bottom: 1px solid ; ">Hodnota</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-right: 1px solid ; border-bottom: 1px solid ; "><code class="code">/Type</code></td>
+                                 <td style="border-bottom: 1px solid ; ">Vždy <code class="code">/EmbeddedFile</code></td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 1px solid ; "><code class="code">/SubType</code></td>
+                                 <td>
+                                                      
+                                    <p>Typ internetového média pro vložený soubor. Pro dokument ISDOC a metadata
+                                                           veřejné správy se vždy použije hodnota <code class="code">text/xml</code>. Pro ostatní
+                                                           vložené soubory se použije jim odpovídající typ.<a class="xref" href="#bib.rfc6838" title="Media Type Specifications and Registration Procedures">[<abbr class="abbrev">RFC6838</abbr>]</a></p>
+                                                    
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div><br class="table-break" /></section>
+               <section class="section" id="d5e219">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h4 class="title">3.2.2. Přílohy dokladu</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <p>Pokud dokument ISDOC odkazuje na přílohy (element <code class="sgmltag-element">Supplement</code>), tak se
+                     přílohy vloží jako soubory do dokumentu PDF. Z dokumentu ISDOC se pak na vložené soubory
+                     odkazuje pomocí identifikátoru fragmentu ve tvaru <code class="code">#ef=<em class="replaceable">jméno
+                           souboru</em></code>. Např.:
+                  </p><pre class="programlisting">...
+&lt;Supplement&gt;
+  &lt;Filename&gt;#ef=OBCHODNI_PODMINKY.DOCX&lt;/Filename&gt;
+  &lt;DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;
+  &lt;DigestValue&gt;Gm9hyD0uRKiUN3VOY7X0OIB1+DU=&lt;/DigestValue&gt;
+&lt;/Supplement&gt;
+...</pre></section>
+            </section>
             <section class="section" id="archiv">
                <div class="titlepage">
                   <div>
                      <div>
-                        <h3 class="title">3.2. Archiv</h3>
+                        <h3 class="title">3.3. Archiv</h3>
                      </div>
                   </div>
                </div>
@@ -484,7 +681,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <div class="titlepage">
                      <div>
                         <div>
-                           <h4 class="title">3.2.1. Manifest</h4>
+                           <h4 class="title">3.3.1. Manifest</h4>
                         </div>
                      </div>
                   </div>
@@ -495,7 +692,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      <code class="sgmltag-element">maindocument</code>, který v atributu <code class="sgmltag-attribute">filename</code> určuje
                      umístění dokumentu ISDOC uvnitř archivu.
                   </p>
-                  <div class="example" id="d5e138">
+                  <div class="example" id="d5e257">
                      <div class="example-title">Příklad 1. Manifest archivu – soubor <code class="filename">manifest.xml</code></div>
                      <div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0"?&gt;
 &lt;manifest xmlns="http://isdoc.cz/namespace/2013/manifest"&gt;
@@ -520,9 +717,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   </div>
                </div>
             </div>
-            <p>Jednotlivé typy dokumentů ISDOC musí splňovat následující pravidla. Některá z následujících pravidel lze 
-               kontrolovat strojově pomocí schématu v jazyce Schematron. Odpovídající schéma je v příloze <a class="xref" href="#schematron" title="C. Schéma pro kontrolu vybraných pravidel – isdoc-6.0.2.sch">C – „<em>Schéma pro kontrolu vybraných pravidel – <code class="filename"></code></em></a><a class="filename" href="../sch/isdoc-6.0.2.sch" target="_top">isdoc-6.0.2.sch</a><a class="xref" href="#schematron" title="C. Schéma pro kontrolu vybraných pravidel – isdoc-6.0.2.sch"><em><code class="filename"></code></em>“</a>. 
-               
+            <p>Jednotlivé typy dokumentů ISDOC musí splňovat následující pravidla. Některá
+               z následujících pravidel lze kontrolovat strojově pomocí schématu v jazyce Schematron.
+               Odpovídající schéma je v příloze <a class="xref" href="#schematron" title="C. Schéma pro kontrolu vybraných pravidel – isdoc-6.0.2.sch">C – „<em>Schéma pro kontrolu vybraných pravidel – <code class="filename"></code></em></a><a class="filename" href="../sch/isdoc-6.0.2.sch" target="_top">isdoc-6.0.2.sch</a><a class="xref" href="#schematron" title="C. Schéma pro kontrolu vybraných pravidel – isdoc-6.0.2.sch"><em><code class="filename"></code></em>“</a>. 
             </p>
             <section class="section" id="pravidla-invoice">
                <div class="titlepage">
@@ -540,7 +737,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </div>
                      </div>
                   </div>
-                  <p>Pro typ dokladu 2, 3 a 6 musí existovat vazba na původní doklad. Konkrétně tedy pro <code class="sgmltag-element">DocumentType</code> = 2, 3, 6 musí existovat element <code class="sgmltag-element">OriginalDocumentReference</code> a musí byt neprázdný.
+                  <p>Pro typ dokladu 2, 3 a 6 musí existovat vazba na původní doklad. Konkrétně tedy pro
+                     <code class="sgmltag-element">DocumentType</code> = 2, 3, 6 musí existovat element
+                     <code class="sgmltag-element">OriginalDocumentReference</code> a musí byt neprázdný.
                   </p>
                </section>
                <section class="section" id="invoice-rule-2">
@@ -551,7 +750,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </div>
                      </div>
                   </div>
-                  <p>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element <code class="sgmltag-element">ForeignCurrencyCode</code>, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na <code class="code">Curr</code>.
+                  <p>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+                     Konkrétně: pokud existuje element <code class="sgmltag-element">ForeignCurrencyCode</code>, pak musí existovat
+                     všechny elementy s částkami pro cizí měnu tj. ty končící na <code class="code">Curr</code>.
                   </p>
                </section>
                <section class="section" id="invoice-rule-3">
@@ -562,7 +763,10 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </div>
                      </div>
                   </div>
-                  <p>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element <code class="sgmltag-element">ForeignCurrencyCode</code>, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na <code class="code">Curr</code>. Položky s kursem (<code class="sgmltag-element">CurrRate</code> i <code class="sgmltag-element">RefCurrRate</code>) musí být rovny hodnotě 1.
+                  <p>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+                     neexistuje element <code class="sgmltag-element">ForeignCurrencyCode</code>, pak nesmí existovat žádný element pro
+                     cizí měnu, tj. element končící na <code class="code">Curr</code>. Položky s kursem (<code class="sgmltag-element">CurrRate</code>
+                     i <code class="sgmltag-element">RefCurrRate</code>) musí být rovny hodnotě 1.
                   </p>
                </section>
                <section class="section" id="invoice-rule-4">
@@ -573,7 +777,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </div>
                      </div>
                   </div>
-                  <p>U dokladu v zahraniční měně nesmí být měna lokální a zahraniční shodné. Konkrétně hodnota povinné položky <code class="sgmltag-element">LocalCurrencyCode</code> se nesmí rovnat hodnotě nepovinné položky <code class="sgmltag-element">ForeignCurrencyCode</code>.
+                  <p>U dokladu v zahraniční měně nesmí být měna lokální a zahraniční shodné. Konkrétně
+                     hodnota povinné položky <code class="sgmltag-element">LocalCurrencyCode</code> se nesmí rovnat hodnotě nepovinné
+                     položky <code class="sgmltag-element">ForeignCurrencyCode</code>.
                   </p>
                </section>
                <section class="section" id="invoice-rule-5">
@@ -595,16 +801,17 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <div class="titlepage">
                      <div>
                         <div>
-                           <h4 class="title">4.1.6. Jednotky jednotlivých šarží v jedné řádce musí být stejné a odpovídat jednotce množství pro celou řádku</h4>
+                           <h4 class="title">4.1.6. Jednotky jednotlivých šarží v jedné řádce musí být stejné a odpovídat jednotce
+                              množství pro celou řádku
+                           </h4>
                         </div>
                      </div>
                   </div>
-                  <p>Jednotka v rozpisu všech šarží/sériových čísel (element
-                     <code class="sgmltag-element">StoreBatches</code>) musí být stejná jako jednotka pro množství na řádce faktury.
-                     Jednotky u šarží jedné řádky faktury musí být stejné.
-                     Pokud atribut pro jednotku v rozpisu šarží/sériových čísel není uveden, 
-                     tak se předpokládá, že je množství uvedeno ve stejné jednotce
-                     jako množství na řádce faktury. 
+                  <p>Jednotka v rozpisu všech šarží/sériových čísel (element <code class="sgmltag-element">StoreBatches</code>) musí
+                     být stejná jako jednotka pro množství na řádce faktury. Jednotky u šarží jedné řádky
+                     faktury musí být stejné. Pokud atribut pro jednotku v rozpisu šarží/sériových čísel není
+                     uveden, tak se předpokládá, že je množství uvedeno ve stejné jednotce jako množství na
+                     řádce faktury. 
                   </p>
                </section>
                <section class="section" id="invoice-rule-7">
@@ -615,29 +822,37 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </div>
                      </div>
                   </div>
-                  <p>Součet <code class="sgmltag-element">Quantity</code> ze všech záznamů rozpisu šarží/sériových čísel musí odpovídat <code class="sgmltag-element">InvoicedQuantity</code> dané řádky faktury.
+                  <p>Součet <code class="sgmltag-element">Quantity</code> ze všech záznamů rozpisu šarží/sériových čísel musí
+                     odpovídat <code class="sgmltag-element">InvoicedQuantity</code> dané řádky faktury.
                   </p>
                </section>
                <section class="section" id="invoice-rule-8">
                   <div class="titlepage">
                      <div>
                         <div>
-                           <h4 class="title">4.1.8. Sekundární identifikace zboží může být uvedena pouze v případě, že je uvedena i primární</h4>
+                           <h4 class="title">4.1.8. Sekundární identifikace zboží může být uvedena pouze v případě, že je uvedena
+                              i primární
+                           </h4>
                         </div>
                      </div>
                   </div>
-                  <p>Nepovinnou položku <code class="sgmltag-element">SecondarySellersItemIdentification</code> lze uvést pouze v případě, že je uvedena také položka <code class="sgmltag-element">SellersItemIdentification</code>.
+                  <p>Nepovinnou položku <code class="sgmltag-element">SecondarySellersItemIdentification</code> lze uvést pouze
+                     v případě, že je uvedena také položka <code class="sgmltag-element">SellersItemIdentification</code>.
                   </p>
                </section>
                <section class="section" id="invoice-rule-9">
                   <div class="titlepage">
                      <div>
                         <div>
-                           <h4 class="title">4.1.9. Terciální identifikace zboží může být uvedena pouze v případě, že je uvedena i primární a sekundární</h4>
+                           <h4 class="title">4.1.9. Terciální identifikace zboží může být uvedena pouze v případě, že je uvedena
+                              i primární a sekundární
+                           </h4>
                         </div>
                      </div>
                   </div>
-                  <p>Nepovinnou položku <code class="sgmltag-element">TertiarySellersItemIdentification</code> lze uvést pouze v případě, že jsou uvedeny také položky <code class="sgmltag-element">SellersItemIdentification</code> a <code class="sgmltag-element">SecondarySellersItemIdentification</code>.
+                  <p>Nepovinnou položku <code class="sgmltag-element">TertiarySellersItemIdentification</code> lze uvést pouze
+                     v případě, že jsou uvedeny také položky <code class="sgmltag-element">SellersItemIdentification</code> a
+                     <code class="sgmltag-element">SecondarySellersItemIdentification</code>.
                   </p>
                </section>
                <section class="section" id="invoice-rule-sdt-origin">
@@ -648,10 +863,11 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </div>
                      </div>
                   </div>
-                  <p>Element <code class="sgmltag-element">SubDocumentTypeOrigin</code> musí obsahovat pouze hodnoty uvedené v tabulce <a class="xref" href="#tab.std-origin" title="Tabulka 1. Přípustné hodnoty pro element SubDocumentTypeOrigin">1 – „Přípustné hodnoty pro element <code class="sgmltag-element">SubDocumentTypeOrigin</code>“</a>.
+                  <p>Element <code class="sgmltag-element">SubDocumentTypeOrigin</code> musí obsahovat pouze hodnoty uvedené
+                     v tabulce <a class="xref" href="#tab.std-origin" title="Tabulka 3. Přípustné hodnoty pro element SubDocumentTypeOrigin">3 – „Přípustné hodnoty pro element <code class="sgmltag-element">SubDocumentTypeOrigin</code>“</a>.
                   </p>
                   <div class="table" id="tab.std-origin">
-                     <div class="table-title">Tabulka 1. Přípustné hodnoty pro element <code class="sgmltag-element">SubDocumentTypeOrigin</code></div>
+                     <div class="table-title">Tabulka 3. Přípustné hodnoty pro element <code class="sgmltag-element">SubDocumentTypeOrigin</code></div>
                      <div class="table-contents">
                         <table style="border-collapse: collapse; border-top: 1px solid ; border-bottom: 1px solid ; border-left: 1px solid ; border-right: 1px solid ; ">
                            <colgroup>
@@ -696,7 +912,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </div>
                      </div>
                   </div>
-                  <p>Element <code class="sgmltag-element">SubDocumentTypeOrigin</code> musí obsahovat pouze hodnoty uvedené v tabulce <a class="xref" href="#tab.std-origin" title="Tabulka 1. Přípustné hodnoty pro element SubDocumentTypeOrigin">1 – „Přípustné hodnoty pro element <code class="sgmltag-element">SubDocumentTypeOrigin</code>“</a>.
+                  <p>Element <code class="sgmltag-element">SubDocumentTypeOrigin</code> musí obsahovat pouze hodnoty uvedené
+                     v tabulce <a class="xref" href="#tab.std-origin" title="Tabulka 3. Přípustné hodnoty pro element SubDocumentTypeOrigin">3 – „Přípustné hodnoty pro element <code class="sgmltag-element">SubDocumentTypeOrigin</code>“</a>.
                   </p>
                </section>
             </section>
@@ -736,7 +953,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                            pozdější přidání dalších podpisů tím, že podpisy samotné se vynechají z podepisování
                            pomocí XPath filtru <code class="code">not(ancestor-or-self::dsig:Signature)</code>.
                         </p>
-                        <div class="example" id="d5e344">
+                        <div class="example" id="d5e463">
                            <div class="example-title">Příklad 2. Použití transformace XPath v digitálním podpisu</div>
                            <div class="example-contents"><pre class="programlisting">&lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#"
            <span class="bold"><strong>xmlns:dsig="http://www.w3.org/2000/09/xmldsig#"</strong></span>
@@ -766,8 +983,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      <li class="listitem">
                         <p>Je doporučeno, aby každý připojený digitální podpis obsahoval unikátní identifikátor
                            uvnitř atributu <code class="sgmltag-attribute">Id</code>. Hodnota identifikátoru musí odpovídat
-                           produkčnímu pravidlu <code class="literal"><a class="literal" href="http://www.w3.org/TR/REC-xml/#NT-Name" target="_top">Name</a></code> tak, jak jej definuje specifikace <a class="xref" href="#bib.xml" title="Extensible Markup Language (XML) 1.0 (Fifth Edition).">[<abbr class="abbrev">XML</abbr>]</a>.<a href="#ftn.d5e354" class="footnote"><sup class="footnote" id="d5e354">[1]</sup></a></p>
-                        <div class="example" id="d5e356">
+                           produkčnímu pravidlu <code class="literal"><a class="literal" href="http://www.w3.org/TR/REC-xml/#NT-Name" target="_top">Name</a></code> tak, jak jej definuje specifikace <a class="xref" href="#bib.xml" title="Extensible Markup Language (XML) 1.0 (Fifth Edition).">[<abbr class="abbrev">XML</abbr>]</a>.<a href="#ftn.d5e473" class="footnote"><sup class="footnote" id="d5e473">[1]</sup></a></p>
+                        <div class="example" id="d5e475">
                            <div class="example-title">Příklad 3. Přiřazení unikátního identifikátoru podpisu</div>
                            <div class="example-contents"><pre class="programlisting">&lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#"
            xmlns:dsig="http://www.w3.org/2000/09/xmldsig#"
@@ -829,8 +1046,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </div>
                   </div>
                </div>
-               <p>Do verze ISDOC 5.3.x mohly aplikace produkovat vícenásobné <span class="quote">„<span class="quote">enveloped</span>“</span> podpisy bez použití transformace
-                  XPath. Selže-li jejich ověření standardním postupem, postupuje se následovně:
+               <p>Do verze ISDOC 5.3.x mohly aplikace produkovat vícenásobné <span class="quote">„<span class="quote">enveloped</span>“</span>
+                  podpisy bez použití transformace XPath. Selže-li jejich ověření standardním postupem,
+                  postupuje se následovně:
                </p>
                <div class="orderedlist">
                   <ol class="orderedlist" type="1">
@@ -840,7 +1058,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </p>
                      </li>
                      <li class="listitem">
-                        <p>Poslední digitální podpis (element <code class="sgmltag-element">Signature</code>) se z dokumentu odstraní a s takto upraveným dokumentem se opakuje krok 1.
+                        <p>Poslední digitální podpis (element <code class="sgmltag-element">Signature</code>) se z dokumentu odstraní a
+                           s takto upraveným dokumentem se opakuje krok 1.
                         </p>
                      </li>
                   </ol>
@@ -881,11 +1100,11 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </li>
                      <li class="listitem">
                         <p>Digitální podpis, který je předmětem časového razítka, musí obsahovat podpisový
-                           certifikát uvnitř elementu <code class="sgmltag-element">KeyInfo</code> (viz sekce 4.4.1 <a class="xref" href="#bib.xades" title="ETSI TS 101 903 V1.4.1: XML Advanced Electronic Signatures (XAdES)">[<abbr class="abbrev">XAdES</abbr>]</a>) a otisk podpisového certifikátu musí být součástí podepisovaných dat.<a href="#ftn.d5e411" class="footnote"><sup class="footnote" id="d5e411">[2]</sup></a></p>
+                           certifikát uvnitř elementu <code class="sgmltag-element">KeyInfo</code> (viz sekce 4.4.1 <a class="xref" href="#bib.xades" title="ETSI TS 101 903 V1.4.1: XML Advanced Electronic Signatures (XAdES)">[<abbr class="abbrev">XAdES</abbr>]</a>) a otisk podpisového certifikátu musí být součástí podepisovaných dat.<a href="#ftn.d5e530" class="footnote"><sup class="footnote" id="d5e530">[2]</sup></a></p>
                      </li>
                      <li class="listitem">
                         <p>Autoritě časového razítka se posílá otisk hodnoty digitálního podpisu v elementu
-                           <code class="sgmltag-element">SignatureValue</code>.<a href="#ftn.d5e416" class="footnote"><sup class="footnote" id="d5e416">[3]</sup></a> Pro výpočet otisku musí být použit algoritmus z rodiny SHA-2.<a href="#ftn.d5e419" class="footnote"><sup class="footnote" id="d5e419">[4]</sup></a></p>
+                           <code class="sgmltag-element">SignatureValue</code>.<a href="#ftn.d5e535" class="footnote"><sup class="footnote" id="d5e535">[3]</sup></a> Pro výpočet otisku musí být použit algoritmus z rodiny SHA-2.<a href="#ftn.d5e539" class="footnote"><sup class="footnote" id="d5e539">[4]</sup></a></p>
                      </li>
                      <li class="listitem">
                         <p>Časové razítko obdržené od autority časového razítka musí být uloženo v elementu
@@ -896,7 +1115,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </li>
                   </ol>
                </div>
-               <div class="example" id="d5e426">
+               <div class="example" id="d5e546">
                   <div class="example-title">Příklad 4. ISDOC s digitálními podpisy výstavce, příjemce a časovým razítkem</div>
                   <div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;Invoice xmlns="http://isdoc.cz/namespace/2013" version="5.2.2"&gt;
@@ -990,7 +1209,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
             &lt;xades:SignatureTimeStamp&gt;
               &lt;xades:EncapsulatedTimeStamp<span id="dsig-xades-ets"></span>⓳
                      Encoding="http://uri.etsi.org/01903/v1.2.2#DER"&gt;MIIOB...
-                <span class="emphasis"><em>Časové razítko zakódované v ASN.1/DER a následně base64</em></span>
+                <span class="emphasis"><em>Časové razítko zakódované v ASN.1/DER a následně base64</em></span>
                 ...qp8=&lt;/xades:EncapsulatedTimeStamp&gt;
             &lt;/xades:SignatureTimeStamp&gt;
           &lt;/xades:UnsignedSignatureProperties&gt;
@@ -1015,9 +1234,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                                  </p>
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
-                                 <p>Digitální podpis příjemce dokumentu. Podepsán je celý předcházející dokument – tedy
-                                                jak původní obsah faktury tak podpis výstavce. Navíc je kvůli požadavkům na shodu
-                                                s XAdES-BES podepsán i podpisový certifikát příjemce (viz <span id="dsig-ref2"></span>❼).
+                                 <p>Digitální podpis příjemce dokumentu. Podepsán je celý předcházející dokument –
+                                                  tedy jak původní obsah faktury tak podpis výstavce. Navíc je kvůli požadavkům na shodu
+                                                  s XAdES-BES podepsán i podpisový certifikát příjemce (viz <span id="dsig-ref2"></span>❼).
                                  </p>
                               </td>
                            </tr>
@@ -1028,8 +1247,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Digitální podpis, který chceme opatřit časovým razítkem, musí mít unikátní
-                                                identifikátor. Časové razítko pomocí odkazu na identifikátor indikuje, kterého podpisu
-                                                se týká.
+                                                  identifikátor. Časové razítko pomocí odkazu na identifikátor indikuje, kterého podpisu
+                                                  se týká.
                                  </p>
                               </td>
                            </tr>
@@ -1040,7 +1259,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Element <code class="sgmltag-element">SignedInfo</code> obsahuje informace o podepisovaných datech, způsobu
-                                                jejich kanonizace a metodě výpočtu podpisu.
+                                                  jejich kanonizace a metodě výpočtu podpisu.
                                  </p>
                               </td>
                            </tr>
@@ -1050,9 +1269,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                                  </p>
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
-                                 <p>Element <code class="sgmltag-element">Reference</code> určuje data pro podepsání. Atribut <code class="code">URI=""</code>
-                                                říká, že se bude podepisovat celý stávající dokument (v našem případě původní faktura a
-                                                podpis výstavce).
+                                 <p>Element <code class="sgmltag-element">Reference</code> určuje data pro podepsání. Atribut
+                                                    <code class="code">URI=""</code> říká, že se bude podepisovat celý stávající dokument (v našem
+                                                  případě původní faktura a podpis výstavce).
                                  </p>
                               </td>
                            </tr>
@@ -1063,7 +1282,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Element <code class="sgmltag-element">Reference</code> musí mít přiřazen identifikátor, aby se na něj bylo
-                                                možné odkázat z elementu <code class="sgmltag-element">DataObjectFormat</code> (viz <span id="dsig-xades-dof"></span>⓲).
+                                                  možné odkázat z elementu <code class="sgmltag-element">DataObjectFormat</code> (viz <span id="dsig-xades-dof"></span>⓲).
                                  </p>
                               </td>
                            </tr>
@@ -1074,11 +1293,11 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Element <code class="sgmltag-element">Reference</code> určuje data pro podepsání. Atribut
-                                                  <code class="code">URI="#Signature-2-SignedProperties"</code> říká, že se bude podepisovat element,
-                                                který má identifikátor <code class="code">Signature-2-SignedProperties</code>. V našem případě se
-                                                jedná o element <code class="sgmltag-element">SignedProperties</code> obsahující čas podepisování, otisk
-                                                podpisového certifikátu (viz <span id="dsig-xades-sc"></span>⓯) a další informace.
-                                                Zahrnutí těchto údajů do podpisu vyžaduje XAdES-BES.
+                                                    <code class="code">URI="#Signature-2-SignedProperties"</code> říká, že se bude podepisovat
+                                                  element, který má identifikátor <code class="code">Signature-2-SignedProperties</code>. V našem
+                                                  případě se jedná o element <code class="sgmltag-element">SignedProperties</code> obsahující čas podepisování,
+                                                  otisk podpisového certifikátu (viz <span id="dsig-xades-sc"></span>⓯) a další
+                                                  informace. Zahrnutí těchto údajů do podpisu vyžaduje XAdES-BES.
                                  </p>
                               </td>
                            </tr>
@@ -1089,8 +1308,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Odkaz na podepisovaná data, v tomto případě na element <code class="sgmltag-element">SignedProperties</code>
-                                                (viz <span id="dsig-xades-sp"></span>⓭) obsahující zejména otisk podpisového
-                                                certifikátu.
+                                                  (viz <span id="dsig-xades-sp"></span>⓭) obsahující zejména otisk podpisového
+                                                  certifikátu.
                                  </p>
                               </td>
                            </tr>
@@ -1113,7 +1332,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Element <code class="sgmltag-element">Object</code> slouží jako kontejner, do kterého je možné přidat
-                                                doplňující informace pro digitální podpis včetně časového razítka XAdES-T.
+                                                  doplňující informace pro digitální podpis včetně časového razítka XAdES-T.
                                  </p>
                               </td>
                            </tr>
@@ -1134,7 +1353,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Atribut <code class="sgmltag-attribute">Target</code> obsahuje odkaz na digitální podpis,
-                                                kterého se týká časové razítko.
+                                                  kterého se týká časové razítko.
                                  </p>
                               </td>
                            </tr>
@@ -1145,7 +1364,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Element <code class="sgmltag-element">SignedProperties</code> obaluje veškeré přídavné vlastnosti, které se
-                                                podepisují. Zejména otisk podpisového certifikátu.
+                                                  podepisují. Zejména otisk podpisového certifikátu.
                                  </p>
                               </td>
                            </tr>
@@ -1156,7 +1375,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Čas UTC podepisování dokumentu. Čas musí vyhovovat datovému typu
-                                                  <code class="code">dateTime</code> W3C XML schémat.
+                                                    <code class="code">dateTime</code> W3C XML schémat.
                                  </p>
                               </td>
                            </tr>
@@ -1167,7 +1386,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
                                  <p>Informace o podpisovém certifikátu. Element <code class="sgmltag-element">SigningCertificate</code> nesmí
-                                                obsahovat atribut <code class="sgmltag-attribute">Id</code> (viz <a class="xref" href="#bib.2011-130-eu" title="COMMISSION DECISION of 25 February 2011 establishing minimum requirements for the cross-border processing of documents signed electronically by competent authorities under Directive 2006/123/EC of the European Parliament and of the Council on services in the internal market">[<abbr class="abbrev">2011/130/EU</abbr>]</a>) – odpovídající certifikát v elementu <code class="sgmltag-element">KeyInfo</code> (viz <span id="dsig-ki"></span>❾) je nalezen na základě shody otisku certifikátu (viz <span id="dsig-xades-dv"></span>⓰).
+                                                  obsahovat atribut <code class="sgmltag-attribute">Id</code> (viz <a class="xref" href="#bib.2011-130-eu" title="COMMISSION DECISION of 25 February 2011 establishing minimum requirements for the cross-border processing of documents signed electronically by competent authorities under Directive 2006/123/EC of the European Parliament and of the Council on services in the internal market">[<abbr class="abbrev">2011/130/EU</abbr>]</a>) – odpovídající certifikát v elementu <code class="sgmltag-element">KeyInfo</code> (viz <span id="dsig-ki"></span>❾) je nalezen na základě shody otisku certifikátu (viz <span id="dsig-xades-dv"></span>⓰).
                                  </p>
                               </td>
                            </tr>
@@ -1177,9 +1396,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                                  </p>
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
-                                 <p>Hodnota otisku podpisového certifikátu zakódovaná pomocí base64. Otisk se počítá nad
-                                                certifikátem ve formátu ASN.1/DER. Algoritmus pro výpočet otisku je určen předcházejícím
-                                                elementem <code class="sgmltag-element">DigestMethod</code>.
+                                 <p>Hodnota otisku podpisového certifikátu zakódovaná pomocí base64. Otisk se počítá
+                                                  nad certifikátem ve formátu ASN.1/DER. Algoritmus pro výpočet otisku je určen
+                                                  předcházejícím elementem <code class="sgmltag-element">DigestMethod</code>.
                                  </p>
                               </td>
                            </tr>
@@ -1200,10 +1419,10 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                                  </p>
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
-                                 <p>Element <code class="sgmltag-element">DataObjectFormat</code> se pomocí atributu <code class="sgmltag-attribute">ObjectReference</code> odkazuje na element <code class="sgmltag-element">Reference</code> (viz <span id="dsig-ref1"></span>❺), který do podpisu zahrnuje celý dokument ISDOC. Musí obsahovat
-                                                podelement <code class="sgmltag-element">MimeType</code> určující MIME typ odkazovaných dat. V případě formátu
-                                                ISDOC, který používá syntaxi XML, je MIME typ vždy
-                                                <code class="literal">application/xml</code>.
+                                 <p>Element <code class="sgmltag-element">DataObjectFormat</code> se pomocí atributu <code class="sgmltag-attribute">ObjectReference</code> odkazuje na element <code class="sgmltag-element">Reference</code> (viz <span id="dsig-ref1"></span>❺), který do podpisu zahrnuje celý dokument ISDOC. Musí
+                                                  obsahovat podelement <code class="sgmltag-element">MimeType</code> určující MIME typ odkazovaných dat. V případě
+                                                  formátu ISDOC, který používá syntaxi XML, je MIME typ vždy
+                                                    <code class="literal">application/xml</code>.
                                  </p>
                               </td>
                            </tr>
@@ -1213,8 +1432,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                                  </p>
                               </td>
                               <td style="vertical-align: top; text-align: left; ">
-                                 <p>Element <code class="sgmltag-element">EncapsulatedTimeStamp</code> obsahuje samotné časové razítko ve formátu
-                                                ASN.1/DER zakódované pomocí base64.
+                                 <p>Element <code class="sgmltag-element">EncapsulatedTimeStamp</code> obsahuje samotné časové razítko ve
+                                                  formátu ASN.1/DER zakódované pomocí base64.
                                  </p>
                               </td>
                            </tr>
@@ -1267,7 +1486,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   </ul>
                </div>
             </section>
-            <section class="section" id="d5e545">
+            <section class="section" id="d5e665">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1293,7 +1512,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   dodavateli aplikace.
                </p>
             </section>
-            <section class="section" id="d5e550">
+            <section class="section" id="d5e670">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1319,7 +1538,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   s ostatními řádky, musí se před zobrazením zaokrouhlit a opět dojde k porušení rovnice <em class="mathphrase">JC*PK=CC</em>.
                </p>
             </section>
-            <section class="section" id="d5e559">
+            <section class="section" id="d5e679">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1349,7 +1568,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   vhodné tyto položky normalizovat například na tvar „všechna písmena velká“.
                </p>
             </section>
-            <section class="section" id="d5e568">
+            <section class="section" id="d5e688">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1378,7 +1597,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </li>
                      <li class="listitem">
                         <p>Pokud je odesílajícím subjektem česká firma, musí element
-                           <code class="sgmltag-element">Invoice</code>/<code class="sgmltag-element">AccountingSupplierParty</code>/<code class="sgmltag-element">PostalAddress</code>/<code class="sgmltag-element">Country</code>/<code class="sgmltag-element">IdentificationCode</code> v souladu s ISO 3166-1 obsahovat hodnotu „<code class="code">CZ</code>“.
+                           <code class="sgmltag-element">Invoice</code>/<code class="sgmltag-element">AccountingSupplierParty</code>/<code class="sgmltag-element">PostalAddress</code>/<code class="sgmltag-element">Country</code>/<code class="sgmltag-element">IdentificationCode</code>
+                           v souladu s ISO 3166-1 obsahovat hodnotu „<code class="code">CZ</code>“.
                         </p>
                      </li>
                      <li class="listitem">
@@ -1392,7 +1612,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   platnou v zemi vystavitele dokladu.
                </p>
             </section>
-            <section class="section" id="d5e592">
+            <section class="section" id="d5e712">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1411,8 +1631,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <ol class="orderedlist" type="a">
                      <li class="listitem">
                         <p> vztah daňových záloh: </p>
-                        <p><em class="mathphrase">TaxInclusiveAmount -
-                              AlreadyClaimedTaxInclusiveAmount =
+                        <p><em class="mathphrase">TaxInclusiveAmount - AlreadyClaimedTaxInclusiveAmount =
                               DifferenceTaxInclusiveAmount</em></p>
                         <p>neboli celková částka s daní – položka předepsané daňové zálohy v kladné částce =
                            rozdíl, tj. celková částka k zaplacení s daní.
@@ -1420,8 +1639,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </li>
                      <li class="listitem">
                         <p> vztah nedaňových záloh a zaokrouhlení až k částce „k zaplacení“: </p>
-                        <p><em class="mathphrase">DifferenceTaxInclusiveAmount + PayableRoundingAmount
-                              - PaidDepositsAmount = PayableAmount</em></p>
+                        <p><em class="mathphrase">DifferenceTaxInclusiveAmount + PayableRoundingAmount - PaidDepositsAmount
+                              = PayableAmount</em></p>
                         <p>neboli celková částka k zaplacení s daní + haléřové vyrovnání (zaokrouhlení) -
                            zaplacené nedaňové zálohy = částka k zaplacení.
                         </p>
@@ -1434,7 +1653,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   fakt, že jde o dobropis) naznačují, že všechna čísla je od původní faktury vlastně třeba
                   odečíst. Dobropis jako takový je ale vždy v kladných částkách. Toto pravidlo bylo
                   formulováno a stalo se závazné s verzí 5.2.1. Uvedená hodnota má být na faktuře opravdu
-                  záporná pouze v případě, když se někdo snaží tímto způsobem udělat dobropis. Pokud tím
+                  záporná pouze v případě, když se někdo snaží tímto způsobem udělat dobropis. Pokud tím
                   neklesne částka celého dokladu do záporu (jinak řečeno pokud takové položky jsou
                   v minoritě), nelze proti tomu nic namítat, protože tento postup praxe používá a ISDOC na to
                   musí umět reagovat. Pokud by ale záporná měla být většina položek, je třeba jít už cestou
@@ -1442,7 +1661,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   budou záporně).
                </p>
             </section>
-            <section class="section" id="d5e616">
+            <section class="section" id="d5e736">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1466,7 +1685,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   jednoho dokladu.
                </p>
             </section>
-            <section class="section" id="d5e620">
+            <section class="section" id="d5e740">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1501,7 +1720,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   povšimnout, že tam nějaká uživatelská data jsou.
                </p>
             </section>
-            <section class="section" id="d5e626">
+            <section class="section" id="d5e746">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1522,7 +1741,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   nic.
                </p>
             </section>
-            <section class="section" id="d5e632">
+            <section class="section" id="d5e752">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1547,7 +1766,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </p>
                <p><em class="mathphrase">TaxTotal/TaxAmount = SUM(TaxSubtotal/TaxAmount)</em></p>
             </section>
-            <section class="section" id="d5e653">
+            <section class="section" id="d5e773">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1572,7 +1791,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                <p><em class="mathphrase">LegalMonetaryTotal/DifferenceTaxInclusiveAmount = SUM
                      (TaxSubTotal/DifferenceTaxInclusiveAmount)</em></p>
             </section>
-            <section class="section" id="d5e677">
+            <section class="section" id="d5e797">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1584,11 +1803,11 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <code class="sgmltag-element">RegisterKeptAt</code>, <code class="sgmltag-element">RegisterFileRef</code> a <code class="sgmltag-element">RegisterDate</code>, protože
                   údaje mají uložené jako jednu položku. Formát ISDOC proto alternativně umožňuje informaci
                   o zápisu do rejstříku uvést jako jeden řetězec v elementu <code class="sgmltag-element">Preformatted</code>. Emitující
-                  systém si může vybrat jeden z těchto dvou způsobů reprezentace zápisu do rejstříku. Příjemce
+                  systém si může vybrat jeden z těchto dvou způsobů reprezentace zápisu do rejstříku. Příjemce
                   dokumentů ISDOC se musí vyrovnat s oběma způsoby.
                </p>
             </section>
-            <section class="section" id="d5e684">
+            <section class="section" id="d5e804">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1604,11 +1823,11 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </p>
                <p>Dalším typickým případem neuvedení elementu <code class="sgmltag-element">PaymentMeans</code> je použití ISDOC pro
                   daňový zálohový list. Zde totiž nepřipadá v úvahu, že by měl být nějak placen, naopak on sám
-                  se dělá pouze na přijatou platbu nedaňového zálohového listu, a předpokládá se tedy, že bude
+                  se dělá pouze na přijatou platbu nedaňového zálohového listu, a předpokládá se tedy, že bude
                   obsahovat odpovídající částky v elementu <code class="sgmltag-element">NonTaxedDeposits</code>.
                </p>
             </section>
-            <section class="section" id="d5e693">
+            <section class="section" id="d5e813">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1621,7 +1840,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   formát PDF. Lze použít i další formáty ukládající vizuální podobu dokumentu (např. HTML,
                   formáty MS Word, MS Excel, obrázky JPEG, GIF, PNG, BMP, atd.). Musí však platit, že příloha
                   označená jako „vizuální podoba dokumentu“, musí být skutečně jeho vizuální podoba. Záměr je
-                  mít pouze jednu vizuální podobu dokumentu, a proto v elementu <code class="sgmltag-element">SupplementsList</code>
+                  mít pouze jednu vizuální podobu dokumentu, a proto v elementu <code class="sgmltag-element">SupplementsList</code>
                   může být pouze jediný element <code class="sgmltag-element">Supplement</code> s atributem
                   <code class="code">preview="true"</code>.
                </p>
@@ -1675,105 +1894,215 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:pattern&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Vazba na původní doklad<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:DocumentType = (2,3,6)]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:OriginalDocumentReferences/*"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Pro typ dokladu 2, 3 a 6 musí existovat vazba na původní doklad. Konkrétně tedy pro DocumentType = 2, 3, 6 musí existovat element OriginalDocumentReference a musí byt neprázdný.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:OriginalDocumentReferences/*"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Pro typ dokladu 2, 3 a 6 musí existovat vazba na původní doklad. Konkrétně tedy pro
+            DocumentType = 2, 3, 6 musí existovat element
+            OriginalDocumentReference a musí byt neprázdný.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:pattern&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:pattern&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Konzistentní uvádění cizí měny<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:LineExtensionAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:LineExtensionAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:LineExtensionAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:LineExtensionAmountTaxInclusive]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:LineExtensionAmountTaxInclusiveCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:LineExtensionAmountTaxInclusiveCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:DepositAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DepositAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DepositAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:TaxableDepositAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxableDepositAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxableDepositAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:TaxInclusiveDepositAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxInclusiveDepositAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxInclusiveDepositAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:TaxAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:TaxableAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxableAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxableAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:TaxInclusiveAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxInclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-          <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxInclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+         Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+          <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:AlreadyClaimedTaxableAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:AlreadyClaimedTaxableAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:AlreadyClaimedTaxableAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:AlreadyClaimedTaxAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:AlreadyClaimedTaxAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:AlreadyClaimedTaxAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:AlreadyClaimedTaxInclusiveAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:AlreadyClaimedTaxInclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:AlreadyClaimedTaxInclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:DifferenceTaxableAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DifferenceTaxableAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DifferenceTaxableAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:DifferenceTaxAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DifferenceTaxAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DifferenceTaxAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:DifferenceTaxInclusiveAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DifferenceTaxInclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DifferenceTaxInclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:TaxExclusiveAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxExclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:TaxExclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:AlreadyClaimedTaxExclusiveAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:AlreadyClaimedTaxExclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:AlreadyClaimedTaxExclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:DifferenceTaxExclusiveAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DifferenceTaxExclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:DifferenceTaxExclusiveAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud xistuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:PayableRoundingAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:PayableRoundingAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musíobsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:PayableRoundingAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:PaidDepositsAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:PaidDepositsAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:PaidDepositsAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]//*[isdoc:PayableAmount]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:PayableAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy. Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:PayableAmountCurr"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v cizí měně musí obsahovat v cizí měně i všechny finanční elementy.
+          Konkrétně: pokud existuje element ForeignCurrencyCode, pak musí existovat
+          všechny elementy s částkami pro cizí měnu tj. ty končící na Curr.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:pattern&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:pattern&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Konzistentní uvádění tuzemské měny<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[not(isdoc:ForeignCurrencyCode)]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:CurrRate = 1"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:RefCurrRate = 1"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:CurrRate = 1"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:RefCurrRate = 1"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[not(isdoc:ForeignCurrencyCode)]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:LineExtensionAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:LineExtensionAmountTaxInclusiveCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DepositAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxableDepositAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxInclusiveDepositAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxableAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxInclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:AlreadyClaimedTaxableAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:AlreadyClaimedTaxAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:AlreadyClaimedTaxInclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DifferenceTaxableAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DifferenceTaxAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DifferenceTaxInclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxExclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:AlreadyClaimedTaxExclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DifferenceTaxExclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:PayableRoundingAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí eistovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:PaidDepositsAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:PayableAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:LineExtensionAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:LineExtensionAmountTaxInclusiveCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DepositAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxableDepositAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxInclusiveDepositAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystaven v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxableAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxInclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:AlreadyClaimedTaxableAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:AlreadyClaimedTaxAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:AlreadyClaimedTaxInclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DifferenceTaxableAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DifferenceTaxAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DifferenceTaxInclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:TaxExclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRat) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:AlreadyClaimedTaxExclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:DifferenceTaxExclusiveAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:PayableRoundingAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:PaidDepositsAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"not(.//isdoc:PayableAmountCurr)"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Doklad vystavený v tuzemské měně nesmí obsahovat žádný element v cizí měně. Pokud
+          neexistuje element ForeignCurrencyCode, pak nesmí existovat žádný element pro
+          cizí měnu, tj. element končící na Curr. Položky s kursem (CurrRate
+            i RefCurrRate) musí být rovny hodnotě 1.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:pattern&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:pattern&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Tuzemská a zahraniční měna musí být rozdílná<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice[isdoc:ForeignCurrencyCode]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:ForeignCurrencyCode != isdoc:LocalCurrencyCode"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>U dokladu v zahraniční měně nesmí být měna lokální a zahraniční shodné. Konkrétně hodnota povinné položky LocalCurrencyCode se nesmí rovnat hodnotě nepovinné položky ForeignCurrencyCode.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>            
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:ForeignCurrencyCode != isdoc:LocalCurrencyCode"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>U dokladu v zahraniční měně nesmí být měna lokální a zahraniční shodné. Konkrétně
+          hodnota povinné položky LocalCurrencyCode se nesmí rovnat hodnotě nepovinné
+          položky ForeignCurrencyCode.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:pattern&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:pattern&gt;</strong>
@@ -1783,48 +2112,53 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
             false), musejí být i všechny jeho řádkové položky nedaňové, tedy
           element VATApplicable uvnitř elementu ClassifiedTaxCategory rovněž
           obsahuje hodnotu false. Obráceně to však neplatí – na dokladu
-          podléhajícím DPH mohou být jednotlivé položky, které nejsou v evidenci DPH.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>            
+          podléhajícím DPH mohou být jednotlivé položky, které nejsou v evidenci DPH.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:pattern&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:pattern&gt;</strong>
-      <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Jednotky jednotlivých šarží v jedné řádce musí být stejné a odpovídat jednotce množství pro celou řádku<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
+      <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Jednotky jednotlivých šarží v jedné řádce musí být stejné a odpovídat jednotce
+            množství pro celou řádku<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice/isdoc:InvoiceLines/isdoc:InvoiceLine[isdoc:Item/isdoc:StoreBatches]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"count(distinct-values(isdoc:Item/isdoc:StoreBatches/isdoc:StoreBatch/isdoc:Quantity/@unitCode)) le 1"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Jednotka v rozpisu všech šarží/sériových čísel (element
-          StoreBatches) musí být stejná jako jednotka pro množství na řádce faktury.
-          Jednotky u šarží jedné řádky faktury musí být stejné.
-          Pokud atribut pro jednotku v rozpisu šarží/sériových čísel není uveden, 
-          tak se předpokládá, že je množství uvedeno ve stejné jednotce
-          jako množství na řádce faktury. <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>            
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"if (isdoc:InvoicedQuantity/@unitCode) then                                 every $q in isdoc:Item/isdoc:StoreBatches/isdoc:StoreBatch/isdoc:Quantity) satisfies $q/@unitCode = isdoc:InvoicedQuantity/@unitCode                               else true()"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Jednotka v rozpisu všech šarží/sériových čísel (element
-          StoreBatches) musí být stejná jako jednotka pro množství na řádce faktury.
-          Jednotky u šarží jedné řádky faktury musí být stejné.
-          Pokud atribut pro jednotku v rozpisu šarží/sériových čísel není uveden, 
-          tak se předpokládá, že je množství uvedeno ve stejné jednotce
-          jako množství na řádce faktury. <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"count(distinct-values(isdoc:Item/isdoc:StoreBatches/isdoc:StoreBatch/isdoc:Quantity/@unitCode)) le 1"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Jednotka v rozpisu všech šarží/sériových čísel (element StoreBatches) musí
+          být stejná jako jednotka pro množství na řádce faktury. Jednotky u šarží jedné řádky
+          faktury musí být stejné. Pokud atribut pro jednotku v rozpisu šarží/sériových čísel není
+          uveden, tak se předpokládá, že je množství uvedeno ve stejné jednotce jako množství na
+          řádce faktury. <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sh:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"if (isdoc:InvoicedQuantity/@unitCode) then                                 every $q in isdoc:Item/isdoc:StoreBatches/isdoc:StoreBatch/isdoc:Quantity) satisfies $q/@unitCode = isdoc:InvoicedQuantity/@unitCode                               else true()"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Jednotka v rozpisu všech šarží/sériových čísel (element StoreBatches) musí
+          být stejná jako jednotka pro množství na řádce faktury. Jednotky u šarží jedné řádky
+          faktury musí být stejné. Pokud atribut pro jednotku v rozpisu šarží/sériových čísel není
+          uveden, tak se předpokládá, že je množství uvedeno ve stejné jednotce jako množství na
+          řádce faktury. <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:pattern&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:pattern&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Součet množství za jednotlivé šarže musí odpovídat množství za celou řádku<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice/isdoc:InvoiceLines/isdoc:InvoiceLine[isdoc:Item/isdoc:StoreBatches]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"sum(isdoc:Item/isdoc:StoreBatches/isdoc:StoreBatch/isdoc:Quantity) = isdoc:InvoicedQuantity"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Součet Quantity ze všech záznamů rozpsu šarží/sériových čísel musí odpovídat InvoicedQuantity dané řádky faktury.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>            
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"sum(isdoc:Item/isdoc:StoreBatches/isdoc:StoreBatch/isdoc:Quantity) = isdoc:InvoicedQuantity"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Součet Quantity ze všech záznamů rozpisu šarží/sériových čísel musí
+          odpovídat InvoicedQuantity dané řádky faktury.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:pattern&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:pattern&gt;</strong>
-      <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Sekundární identifikace zboží může být uvedena pouze v případě, že je uvedena i primární<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
+      <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Sekundární identifikace zboží může být uvedena pouze v případě, že je uvedena
+            i primární<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice/isdoc:InvoiceLines/isdoc:InvoiceLine/isdoc:Item[isdoc:SecondarySellersItemIdentification]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:SellersItemIdentification"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Nepovinnou položku SecondarySellersItemIdentification lze uvést pouze v případě, že je uvedena také položka SellersItemIdentification.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>            
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:SellersItemIdentification"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Nepovinnou položku SecondarySellersItemIdentification lze uvést pouze
+          v případě, že je uvedena také položka SellersItemIdentification.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:pattern&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:pattern&gt;</strong>
-      <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Terciální identifikace zboží může být uvedena pouze v případě, že je uvedena i primární a sekundární<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
+      <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:title&gt;</strong>Terciální identifikace zboží může být uvedena pouze v případě, že je uvedena
+            i primární a sekundární<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:title&gt;</strong>
       <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:rule</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">context</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:Invoice/isdoc:InvoiceLines/isdoc:InvoiceLine/isdoc:Item[isdoc:TertiarySellersItemIdentification]"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>
-            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:SellersItemIdentification and isdoc:SecondarySellersItemIdentification"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Nepovinnou položku TertiarySellersItemIdentification lze uvést pouze v případě, že jsou uvedeny také položky SellersItemIdentification a SecondarySellersItemIdentification.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>            
+            <strong xmlns="" class="hl-tag" style="color: #000096">&lt;sch:assert</strong> <span xmlns="" class="hl-attribute" style="color: #F5844C">test</span>=<span xmlns="" class="hl-value" style="color: #993300">"isdoc:SellersItemIdentification and isdoc:SecondarySellersItemIdentification"</span><strong xmlns="" class="hl-tag" style="color: #000096">&gt;</strong>Nepovinnou položku TertiarySellersItemIdentification lze uvést pouze
+          v případě, že jsou uvedeny také položky SellersItemIdentification a
+            SecondarySellersItemIdentification.<strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:assert&gt;</strong>
           <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:rule&gt;</strong>
    <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:pattern&gt;</strong>
 <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:schema</strong></pre></section>
          <section xml:lang="cs" class="appendix" id="chagelog">
             <h2 class="title" style="clear: both">D. Změny oproti předchozím verzím</h2>
-            <section class="section" id="d5e725">
+            <section class="section" id="d5e845">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1834,6 +2168,9 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </div>
                <div class="itemizedlist">
                   <ul class="itemizedlist" style="list-style-type: disc; ">
+                     <li class="listitem">
+                        <p>Přidána nová reprezentace dokumentu ISDOC.PDF, kdy je dokument ISDOC vložen do formátu PDF/A-3.</p>
+                     </li>
                      <li class="listitem">
                         <p>Vylepšení popisu některých elementů.</p>
                      </li>
@@ -1846,7 +2183,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   </ul>
                </div>
             </section>
-            <section class="section" id="d5e734">
+            <section class="section" id="d5e856">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1921,7 +2258,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </div>
             </section>
          </section>
-         <section class="appendix" id="d5e793">
+         <section class="appendix" id="d5e915">
             <h2 class="title" style="clear: both">E. Možné změny pro další verze</h2>
             <p>Následující seznam obsahuje navrhované změny a rozšíření pro některou z dalších verzí
                ISDOC.
@@ -1929,7 +2266,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
             <div class="itemizedlist">
                <ul class="itemizedlist" style="list-style-type: disc; ">
                   <li class="listitem">
-                     <p>Další verze ISDOC bude podporovat další typy dokumentů objednávka a potvrzení objednávky.</p>
+                     <p>Zvažujeme přidání nových typů dokumentu objednávka a potvrzení objednávky.</p>
                   </li>
                   <li class="listitem">
                      <p>Zvažujeme přidání nového typu dokumentu, který bude sloužit jako kontejner pro uložení
@@ -1939,7 +2276,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </ul>
             </div>
          </section>
-         <div class="bibliography" id="d5e801">
+         <div class="bibliography" id="d5e923">
             <div class="titlepage">
                <div>
                   <div>
@@ -1948,11 +2285,22 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </div>
             </div>
             <div class="bibliomixed" id="bib.appnote">
-               <p class="bibliomixed">[<abbr class="abbrev">APPNOTE</abbr>] <span class="title">APPNOTE.TXT – .ZIP File Format Specification.</span> September 2007. PKWARE Inc. Dostupné na URL: <span class="bibliomisc"><a class="link" href="http://www.pkware.com/documents/APPNOTE/APPNOTE-6.3.2.TXT" target="_top">http://www.pkware.com/documents/APPNOTE/APPNOTE-6.3.2.TXT</a></span></p>
+               <p class="bibliomixed">[<abbr class="abbrev">APPNOTE</abbr>] <span class="title">APPNOTE.TXT – .ZIP File Format
+                     Specification.</span> September 2007. PKWARE Inc. Dostupné na URL: <span class="bibliomisc"><a class="link" href="http://www.pkware.com/documents/APPNOTE/APPNOTE-6.3.2.TXT" target="_top">http://www.pkware.com/documents/APPNOTE/APPNOTE-6.3.2.TXT</a></span></p>
             </div>
             <div class="bibliomixed" id="bib.rfc4051">
                <p class="bibliomixed">[<abbr class="abbrev">RFC4051</abbr>] <span class="title">Additional XML Security Uniform
                      Resource Identifiers (URIs).</span> April 2005. IETF. Dostupné na URL: <span class="bibliomisc"><a class="link" href="http://www.ietf.org/rfc/rfc4051.txt" target="_top">http://www.ietf.org/rfc/rfc4051.txt</a></span></p>
+            </div>
+            <div class="bibliomixed" id="bib.iso19005-3">
+               <p class="bibliomixed">[<abbr class="abbrev">ISO 19005-3</abbr>] <span class="title">Document management –
+                     Electronic document file format for long-term preservation – Part 3: Use of ISO 32000-1 with
+                     support for embedded files (PDF/A-3).</span> 2012. ISO. Dostupné na URL: <span class="bibliomisc"><a class="link" href="https://www.iso.org/standard/57229.html" target="_top">https://www.iso.org/standard/57229.html</a></span></p>
+            </div>
+            <div class="bibliomixed" id="bib.iso32000-1">
+               <p class="bibliomixed">[<abbr class="abbrev">ISO 32000-1</abbr>] <span class="title">Document management –
+                     Portable document format – Part 1: PDF 1.7.</span> 2008. ISO. Dostupné na URL:
+                  <span class="bibliomisc"><a class="link" href="https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf" target="_top">https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf</a></span></p>
             </div>
             <div class="bibliomixed" id="bib.xml">
                <p class="bibliomixed">[<abbr class="abbrev">XML</abbr>] <span class="title">Extensible Markup Language (XML) 1.0
@@ -1969,25 +2317,25 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <span class="title">COMMISSION DECISION of 25 February 2011 establishing minimum requirements for the
                      cross-border processing of documents signed electronically by competent authorities under
                      Directive 2006/123/EC of the European Parliament and of the Council on services in the
-                     internal market</span>. Dostupné na URL:
-                  <span class="bibliomisc"><a class="link" href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:053:0066:0072:EN:PDF" target="_top">http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:053:0066:0072:EN:PDF</a></span><a href="#ftn.d5e828" class="footnote"><sup class="footnote" id="d5e828">[5]</sup></a></p>
+                     internal market</span>. Dostupné na URL: <span class="bibliomisc"><a class="link" href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:053:0066:0072:EN:PDF" target="_top">http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:053:0066:0072:EN:PDF</a></span><a href="#ftn.d5e960" class="footnote"><sup class="footnote" id="d5e960">[5]</sup></a></p>
             </div>
             <div class="bibliomixed" id="bib.cba29">
-               <p class="bibliomixed">[<abbr class="abbrev">ČBA-STD-29</abbr>] <span class="title">Standard elektronické fakturace – Popis rozhraní pro zasílání
-                     e-faktur a e-dokumentů koncovým spotřebitelům do aplikací elektronického bankovnictví</span>.
-                  2014. Česká bankovní asociace.
-                  
+               <p class="bibliomixed">[<abbr class="abbrev">ČBA-STD-29</abbr>] <span class="title">Standard elektronické
+                     fakturace – Popis rozhraní pro zasílání e-faktur a e-dokumentů koncovým spotřebitelům do
+                     aplikací elektronického bankovnictví</span>. 2014. Česká bankovní asociace. 
                </p>
             </div>
             <div class="bibliomixed" id="bib.rfc1951">
-               <p class="bibliomixed">[<abbr class="abbrev">RFC1951</abbr>] <span class="title">DEFLATE Compressed Data Format Specification version 1.3</span>
-                  May 1996. IETF. Dostupné na URL:
-                  <span class="bibliomisc"><a class="link" href="http://www.ietf.org/rfc/rfc1951.txt" target="_top">http://www.ietf.org/rfc/rfc1951.txt</a></span></p>
+               <p class="bibliomixed">[<abbr class="abbrev">RFC1951</abbr>] <span class="title">DEFLATE Compressed Data Format
+                     Specification version 1.3</span> May 1996. IETF. Dostupné na URL: <span class="bibliomisc"><a class="link" href="http://www.ietf.org/rfc/rfc1951.txt" target="_top">http://www.ietf.org/rfc/rfc1951.txt</a></span></p>
             </div>
             <div class="bibliomixed" id="bib.rfc3161">
                <p class="bibliomixed">[<abbr class="abbrev">RFC3161</abbr>] <span class="title">Internet X.509 Public Key
                      Infrastructure Time-Stamp Protocol (TSP)</span> August 2001. IETF. Dostupné na URL:
                   <span class="bibliomisc"><a class="link" href="http://www.ietf.org/rfc/rfc3161.txt" target="_top">http://www.ietf.org/rfc/rfc3161.txt</a></span></p>
+            </div>
+            <div class="bibliomixed" id="bib.rfc6838">
+               <p class="bibliomixed">[<abbr class="abbrev">RFC6838</abbr>] <span class="title">Media Type Specifications and Registration Procedures</span> January 2013. IETF. Dostupné na URL: <span class="bibliomisc"><a class="link" href="http://www.ietf.org/rfc/rfc6838.txt" target="_top">http://www.ietf.org/rfc/rfc6838.txt</a></span></p>
             </div>
             <div class="bibliomixed" id="bib.xmldsig-core">
                <p class="bibliomixed">[<abbr class="abbrev">XMLDSig-Core</abbr>] <span class="title">XML Signature Syntax
@@ -1996,29 +2344,29 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
             </div>
          </div>
          <div class="footnotes"><br /><hr class="footnote-hr" />
-            <div id="ftn.d5e354" class="footnote">
-               <p><a href="#d5e354" class="para"><sup class="para">[1] </sup></a>Například nesmí začínat číslem, nesmí obsahovat mezery atd.
+            <div id="ftn.d5e473" class="footnote">
+               <p><a href="#d5e473" class="para"><sup class="para">[1] </sup></a>Například nesmí začínat číslem, nesmí obsahovat mezery atd.
                </p>
             </div>
-            <div id="ftn.d5e411" class="footnote">
-               <p><a href="#d5e411" class="para"><sup class="para">[2] </sup></a>Povinnost zahrnout podpisový certifikát do podpisu definuje forma XAdES-BES.
+            <div id="ftn.d5e530" class="footnote">
+               <p><a href="#d5e530" class="para"><sup class="para">[2] </sup></a>Povinnost zahrnout podpisový certifikát do podpisu definuje forma XAdES-BES.
                   Časové razítko ve formě XAdES-T musí splňovat i všechny požadavky na nižší formu
                   XAdES-BES (resp. XAdES-EPES).
                </p>
             </div>
-            <div id="ftn.d5e416" class="footnote">
-               <p><a href="#d5e416" class="para"><sup class="para">[3] </sup></a>Otisk se přitom počítá z textového obsahu elementu <code class="sgmltag-element">SignatureValue</code>
-                  nikoliv z binární reprezentace hodnoty digitálního podpisu. Před výpočtem otisku se
-                  ještě provádí kanonizace.
+            <div id="ftn.d5e535" class="footnote">
+               <p><a href="#d5e535" class="para"><sup class="para">[3] </sup></a>Otisk se přitom počítá z elementu <code class="sgmltag-element">SignatureValue</code> včetně jeho obsahu
+                  nikoliv z binární reprezentace hodnoty digitálního podpisu. Před výpočtem otisku se
+                  ještě provádí kanonizace. Viz sekce 7.3 <a class="xref" href="#bib.xades" title="ETSI TS 101 903 V1.4.1: XML Advanced Electronic Signatures (XAdES)">[<abbr class="abbrev">XAdES</abbr>]</a>.
                </p>
             </div>
-            <div id="ftn.d5e419" class="footnote">
-               <p><a href="#d5e419" class="para"><sup class="para">[4] </sup></a>V současné době většina autorit časového razítka v ČR podporuje pouze algoritmus
+            <div id="ftn.d5e539" class="footnote">
+               <p><a href="#d5e539" class="para"><sup class="para">[4] </sup></a>V současné době většina autorit časového razítka v ČR podporuje pouze algoritmus
                   SHA-256.
                </p>
             </div>
-            <div id="ftn.d5e828" class="footnote">
-               <p><a href="#d5e828" class="para"><sup class="para">[5] </sup></a>Kvůli chybám v českém překladu doporučujeme vycházet z anglické verze rozhodnutí
+            <div id="ftn.d5e960" class="footnote">
+               <p><a href="#d5e960" class="para"><sup class="para">[5] </sup></a>Kvůli chybám v českém překladu doporučujeme vycházet z anglické verze rozhodnutí
                   komise.
                </p>
             </div>
