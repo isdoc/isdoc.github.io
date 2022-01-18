@@ -144,7 +144,10 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <h1 class="title">ISDOC – Czech national standard for e-invoicing</h1>
                </div>
                <div>
-                  <h3 class="subtitle"><em>Version 6.0.2 from 2021-04-26</em></h3>
+                  <h3 class="subtitle"><em>Version 6.0.2 from 2022-01-18</em></h3>
+               </div>
+               <div>
+                  <p class="copyright">Copyright © 2022 MVČR</p>
                </div>
                <div>
                   <p class="copyright">Copyright © 2014 ICT UNIE o.s.</p>
@@ -153,12 +156,13 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
             <hr />
          </div>
          <p>Attached schemas and standard formally define exchange format for invoices and other types of documents. The
-            format was created and it is further maintained by Working Group for Electronic Data
-            Interchange Standards of ICT Unie o.s. (<a class="link" href="http://www.isdoc.cz" target="_top">www.isdoc.cz</a>).
+            format was originally created by Working Group for Electronic Data
+            Interchange Standards of <a class="link" href="http://www.ictu.cz/" target="_top">ICT Unie o.s.</a>.
+            As of now future development and maintenance is done by Ministry of the Interior.
          </p>
          <p>Inquires can be sent to <code class="email"><a class="email" href="mailto:info@isdoc.cz">info@isdoc.cz</a></code>.
          </p>
-         <section class="section" id="d5e12">
+         <section class="section" id="d5e15">
             <div class="titlepage">
                <div>
                   <div>
@@ -272,7 +276,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
          </section>
          <section xml:lang="en" class="appendix" id="chagelog">
             <h2 class="title" style="clear: both">Changelog</h2>
-            <section class="section" id="d5e116">
+            <section class="section" id="d5e119">
                <div class="titlepage">
                   <div>
                      <div>
@@ -293,75 +297,6 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </li>
                      <li class="listitem">
                         <p>Clarified details about time stamping.</p>
-                     </li>
-                  </ul>
-               </div>
-            </section>
-            <section class="section" id="d5e127">
-               <div class="titlepage">
-                  <div>
-                     <div>
-                        <h3 class="title">Changes since version 5.3.1 from 2011-12-30</h3>
-                     </div>
-                  </div>
-               </div>
-               <div class="itemizedlist">
-                  <ul class="itemizedlist" style="list-style-type: disc; ">
-                     <li class="listitem">
-                        <p>Namespace changed to <code class="uri">http://isdoc.cz/namespace/2013</code></p>
-                     </li>
-                     <li class="listitem">
-                        <p>References to orders (OrderReference), delivery notes (DeliveryNoteReference) and
-                           original documents (OriginalDocumentReference) are listed only globally. Line can contain reference (using ref attribute)
-                           to such globally defined reference identified by id attribute. Integrity between id and ref attribute values is checked by
-                           the schema.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Elements <code class="sgmltag-element">VATApplicable</code> and <code class="sgmltag-element">ElectronicPossibilityAgreementReference</code> are now mandatory in the schema
-                           (they are mandatory since version 5.3, but this was not formalized in the schema).
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Order of <code class="sgmltag-element">TaxSubTotal</code> subelements is more consistent now.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>OriginalDocumentReference element must be always enclosed in OriginalDocumentReferences element.</p>
-                     </li>
-                     <li class="listitem">
-                        <p>Added ClientBankAccount element for large issuers of B2C invoices.</p>
-                     </li>
-                     <li class="listitem">
-                        <p>Added SubDocumentType and SubDocumentTypeOrigin elements.</p>
-                     </li>
-                     <li class="listitem">
-                        <p>Added the following elements: EgovFlag, FileReference, ReferenceNumber, ISDS_ID,
-                           EgovClassifiers, EgovClassifier, ContractReferences, ContractReference,
-                           LastValidDate, LastValidDateUnbounded, ExternalOrderIssueDate, ParagraphID,
-                           SealSeriesID.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Added new partialPayment attribute to Payment element. This attribute can be used for specifying that partial payment is not
-                           allowed.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Element order inside <code class="sgmltag-element">Invoice</code> was changed.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p><code class="sgmltag-element">PartyTaxScheme</code> element can be repeated when subject has several identifiers.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>ISDOC archives (<code class="filename">.isdocx</code>) must use manifest.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Added new document type for nonpayment documents (<code class="sgmltag-element">CommonDocument</code> element).
-                        </p>
                      </li>
                   </ul>
                </div>

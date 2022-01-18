@@ -147,19 +147,22 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <h3 class="subtitle"><em>Národní standard pro elektronickou fakturaci</em></h3>
                </div>
                <div>
-                  <p class="releaseinfo">Tento dokument byl v době svého publikování ve fázi návrhu. Kdykoliv se může změnit
-                     a být nahrazen novější verzí. Informace o aktuální verzi standardu ISDOC naleznete na adrese
-                             <a class="link" href="http://isdoc.cz" target="_top">http://isdoc.cz</a>.
-                  </p>
+                  <p class="releaseinfo"><em><span class="remark">Tento dokument byl v době svého publikování ve fázi návrhu. Kdykoliv se může změnit
+                           a být nahrazen novější verzí. Informace o aktuální verzi standardu ISDOC naleznete na adrese
+                                 <a class="link" href="http://isdoc.cz" target="_top">http://isdoc.cz</a>.</span></em></p>
                </div>
                <div>
-                  <p class="copyright">Copyright © 2021 MVČR</p>
+                  <p class="releaseinfo"><em><span class="remark">Jakékoliv připomínky a chyby prosím nahlaste pomocí
+                                 <a class="link" href="https://github.com/isdoc/schema/issues" target="_top">https://github.com/isdoc/schema/issues</a>.</span></em></p>
+               </div>
+               <div>
+                  <p class="copyright">Copyright © 2022 MVČR</p>
                </div>
                <div>
                   <p class="copyright">Copyright © 2014 ICT UNIE o.s.</p>
                </div>
                <div>
-                  <p class="pubdate">26. dubna 2021</p>
+                  <p class="pubdate">18. ledna 2022</p>
                </div>
             </div>
             <hr />
@@ -200,20 +203,20 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </li>
                <li><span class="appendix"><a href="#poznamky">A. Implementační poznámky</a></span><ul>
                      <li><span class="section"><a href="#poznamky-maximalni-export">A.1. Zásada exportu maximálního množství informací</a></span></li>
-                     <li><span class="section"><a href="#d5e665">A.2. Výpočet DPH</a></span></li>
-                     <li><span class="section"><a href="#d5e670">A.3. Výpočet celkové ceny z jednotkové a počtu kusů</a></span></li>
-                     <li><span class="section"><a href="#d5e679">A.4. Identifikátory</a></span></li>
-                     <li><span class="section"><a href="#d5e688">A.5. Vyplňování položek v souladu s legislativou</a></span></li>
-                     <li><span class="section"><a href="#d5e712">A.6. Finanční částky</a></span></li>
-                     <li><span class="section"><a href="#d5e736">A.7. Použití typů UUIDType a ID36Type</a></span></li>
-                     <li><span class="section"><a href="#d5e740">A.8. Uživatelské elementy</a></span></li>
-                     <li><span class="section"><a href="#d5e746">A.9. Zúčtovací faktura</a></span></li>
-                     <li><span class="section"><a href="#d5e752">A.10. Vztahy mezi údaji uváděnými uvnitř elementů <code class="sgmltag-element">TaxTotal</code> a
+                     <li><span class="section"><a href="#d5e664">A.2. Výpočet DPH</a></span></li>
+                     <li><span class="section"><a href="#d5e669">A.3. Výpočet celkové ceny z jednotkové a počtu kusů</a></span></li>
+                     <li><span class="section"><a href="#d5e678">A.4. Identifikátory</a></span></li>
+                     <li><span class="section"><a href="#d5e687">A.5. Vyplňování položek v souladu s legislativou</a></span></li>
+                     <li><span class="section"><a href="#d5e711">A.6. Finanční částky</a></span></li>
+                     <li><span class="section"><a href="#d5e735">A.7. Použití typů UUIDType a ID36Type</a></span></li>
+                     <li><span class="section"><a href="#d5e739">A.8. Uživatelské elementy</a></span></li>
+                     <li><span class="section"><a href="#d5e745">A.9. Zúčtovací faktura</a></span></li>
+                     <li><span class="section"><a href="#d5e751">A.10. Vztahy mezi údaji uváděnými uvnitř elementů <code class="sgmltag-element">TaxTotal</code> a
                                         <code class="sgmltag-element">TaxSubTotal</code></a></span></li>
-                     <li><span class="section"><a href="#d5e773">A.11. Vztahy mezi údaji uvnitř elementu <code class="sgmltag-element">LegalMonetaryTotal</code></a></span></li>
-                     <li><span class="section"><a href="#d5e797">A.12. Identifikace zápisu v rejstříku</a></span></li>
-                     <li><span class="section"><a href="#d5e804">A.13. Informace o platbě</a></span></li>
-                     <li><span class="section"><a href="#d5e813">A.14. Vizuální podoba dokumentu</a></span></li>
+                     <li><span class="section"><a href="#d5e772">A.11. Vztahy mezi údaji uvnitř elementu <code class="sgmltag-element">LegalMonetaryTotal</code></a></span></li>
+                     <li><span class="section"><a href="#d5e796">A.12. Identifikace zápisu v rejstříku</a></span></li>
+                     <li><span class="section"><a href="#d5e803">A.13. Informace o platbě</a></span></li>
+                     <li><span class="section"><a href="#d5e812">A.14. Vizuální podoba dokumentu</a></span></li>
                   </ul>
                </li>
                <li><span class="appendix"><a href="#schema">B. Schémata pro jednotlivé typy dokumentů</a></span><ul>
@@ -224,16 +227,13 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </li>
                <li><span class="appendix"><a href="#schematron">C. Schéma pro kontrolu vybraných pravidel – <code class="filename"><a class="filename" href="../sch/isdoc-6.0.2.sch" target="_top">isdoc-6.0.2.sch</a></code></a></span></li>
                <li><span class="appendix"><a href="#chagelog">D. Změny oproti předchozím verzím</a></span><ul>
-                     <li><span class="section"><a href="#d5e845">D.1. Změny oproti verzi 6.0.1 z 26.5.2014</a></span></li>
-                     <li><span class="section"><a href="#d5e856">D.2. Změny oproti verzi 5.3.1 z 30.12.2011</a></span></li>
+                     <li><span class="section"><a href="#d5e844">D.1. Změny oproti verzi 6.0.1 z 26.5.2014</a></span></li>
                   </ul>
                </li>
-               <li><span class="appendix"><a href="#d5e915">E. Možné změny pro další verze</a></span></li>
-               <li><span class="bibliography"><a href="#d5e923">Reference</a></span></li>
+               <li><span class="appendix"><a href="#d5e855">E. Možné změny pro další verze</a></span></li>
+               <li><span class="bibliography"><a href="#d5e863">Reference</a></span></li>
             </ul>
          </div>
-         <p class="remark"><em><span class="remark">Tento dokument je ve fázi návrhu. Jakékoliv připomínky a chyby prosím nahlaste pomocí
-                  <a class="link" href="https://github.com/isdoc/schema/issues" target="_top">https://github.com/isdoc/schema/issues</a>.</span></em></p>
          <section class="section" id="uvod">
             <div class="titlepage">
                <div>
@@ -294,8 +294,6 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </tbody>
                   </table>
                </div>
-               <p class="remark"><em><span class="remark">Červený text na žlutém pozadí vyznačuje poznámky editora, které nebudou součástí
-                        finální verze standardu.</span></em></p>
             </section>
          </section>
          <section class="section" id="shoda">
@@ -462,8 +460,6 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <a class="xref" href="#bib.iso19005-3" title="Document management – Electronic document file format for long-term preservation – Part 3: Use of ISO 32000-1 with support for embedded files (PDF/A-3).">[<abbr class="abbrev">ISO 19005-3</abbr>]</a>, a navíc musí dodržet všechny následující
                   požadavky:
                </p>
-               <p class="remark"><em><span class="remark">Není požadavek na PDF/A-3a moc striktní, nestačilo by PDF/A-3u, aby to bylo snazší pro
-                        implementátory?</span></em></p>
                <div class="orderedlist">
                   <ol class="orderedlist" type="1">
                      <li class="listitem">
@@ -475,8 +471,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         <p>Pokud je příjemcem dokumentu veřejná správa, je do ISDOC.PDF dokumentu vložen soubor
                            pojmenovaný <code class="filename">metadata-invoice-nsessl.xml</code>, který obsahuje metadata
                            nezbytná pro automatický příjem dokumentu do elektronické spisové služby. Obsah souboru
-                           s metadaty musí splňovat požadavky definované v [<em><span class="remark">Asi bude praktické mít formát
-                                 metadat popsaný v samostatném standardu MVČR.</span></em>].
+                           s metadaty musí splňovat požadavky definované v Národním standardu (§ 70, odst. 2 zákona
+                           č. 499/2004 Sb.).
                         </p>
                      </li>
                      <li class="listitem">
@@ -484,7 +480,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </li>
                   </ol>
                </div>
-               <section class="section" id="d5e129">
+               <section class="section" id="d5e128">
                   <div class="titlepage">
                      <div>
                         <div>
@@ -574,7 +570,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                                  <td style="border-right: 1px solid ; "><code class="code">/EF</code></td>
                                  <td>Slovník, který obsahuje položky <code class="code">F</code> a <code class="code">UF</code>, které
                                                       obsahují vložený souborový proud (viz <a class="xref" href="#bib.iso32000-1" title="Document management – Portable document format – Part 1: PDF 1.7.">[<abbr class="abbrev">ISO 32000-1</abbr>]</a>, sekce
-                                                      7.11.4). Slovník souborového proudu musí povinně obsahovat položky uvedené v tabulce <a class="xref" href="#tab.embededfile-required" title="Tabulka 2. Povinné položky ve slovníku popisujícím souborový proud">2 – „Povinné položky ve slovníku popisujícím souborový proud“</a>.
+                                                      7.11.4). Slovník souborového proudu musí povinně obsahovat položky uvedené
+                                                      v tabulce <a class="xref" href="#tab.embededfile-required" title="Tabulka 2. Povinné položky ve slovníku popisujícím souborový proud">2 – „Povinné položky ve slovníku popisujícím souborový proud“</a>.
                                  </td>
                               </tr>
                            </tbody>
@@ -613,7 +610,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                         </table>
                      </div>
                   </div><br class="table-break" /></section>
-               <section class="section" id="d5e219">
+               <section class="section" id="d5e218">
                   <div class="titlepage">
                      <div>
                         <div>
@@ -692,7 +689,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      <code class="sgmltag-element">maindocument</code>, který v atributu <code class="sgmltag-attribute">filename</code> určuje
                      umístění dokumentu ISDOC uvnitř archivu.
                   </p>
-                  <div class="example" id="d5e257">
+                  <div class="example" id="d5e256">
                      <div class="example-title">Příklad 1. Manifest archivu – soubor <code class="filename">manifest.xml</code></div>
                      <div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0"?&gt;
 &lt;manifest xmlns="http://isdoc.cz/namespace/2013/manifest"&gt;
@@ -953,7 +950,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                            pozdější přidání dalších podpisů tím, že podpisy samotné se vynechají z podepisování
                            pomocí XPath filtru <code class="code">not(ancestor-or-self::dsig:Signature)</code>.
                         </p>
-                        <div class="example" id="d5e463">
+                        <div class="example" id="d5e462">
                            <div class="example-title">Příklad 2. Použití transformace XPath v digitálním podpisu</div>
                            <div class="example-contents"><pre class="programlisting">&lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#"
            <span class="bold"><strong>xmlns:dsig="http://www.w3.org/2000/09/xmldsig#"</strong></span>
@@ -983,8 +980,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      <li class="listitem">
                         <p>Je doporučeno, aby každý připojený digitální podpis obsahoval unikátní identifikátor
                            uvnitř atributu <code class="sgmltag-attribute">Id</code>. Hodnota identifikátoru musí odpovídat
-                           produkčnímu pravidlu <code class="literal"><a class="literal" href="http://www.w3.org/TR/REC-xml/#NT-Name" target="_top">Name</a></code> tak, jak jej definuje specifikace <a class="xref" href="#bib.xml" title="Extensible Markup Language (XML) 1.0 (Fifth Edition).">[<abbr class="abbrev">XML</abbr>]</a>.<a href="#ftn.d5e473" class="footnote"><sup class="footnote" id="d5e473">[1]</sup></a></p>
-                        <div class="example" id="d5e475">
+                           produkčnímu pravidlu <code class="literal"><a class="literal" href="http://www.w3.org/TR/REC-xml/#NT-Name" target="_top">Name</a></code> tak, jak jej definuje specifikace <a class="xref" href="#bib.xml" title="Extensible Markup Language (XML) 1.0 (Fifth Edition).">[<abbr class="abbrev">XML</abbr>]</a>.<a href="#ftn.d5e472" class="footnote"><sup class="footnote" id="d5e472">[1]</sup></a></p>
+                        <div class="example" id="d5e474">
                            <div class="example-title">Příklad 3. Přiřazení unikátního identifikátoru podpisu</div>
                            <div class="example-contents"><pre class="programlisting">&lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#"
            xmlns:dsig="http://www.w3.org/2000/09/xmldsig#"
@@ -1100,11 +1097,11 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </li>
                      <li class="listitem">
                         <p>Digitální podpis, který je předmětem časového razítka, musí obsahovat podpisový
-                           certifikát uvnitř elementu <code class="sgmltag-element">KeyInfo</code> (viz sekce 4.4.1 <a class="xref" href="#bib.xades" title="ETSI TS 101 903 V1.4.1: XML Advanced Electronic Signatures (XAdES)">[<abbr class="abbrev">XAdES</abbr>]</a>) a otisk podpisového certifikátu musí být součástí podepisovaných dat.<a href="#ftn.d5e530" class="footnote"><sup class="footnote" id="d5e530">[2]</sup></a></p>
+                           certifikát uvnitř elementu <code class="sgmltag-element">KeyInfo</code> (viz sekce 4.4.1 <a class="xref" href="#bib.xades" title="ETSI TS 101 903 V1.4.1: XML Advanced Electronic Signatures (XAdES)">[<abbr class="abbrev">XAdES</abbr>]</a>) a otisk podpisového certifikátu musí být součástí podepisovaných dat.<a href="#ftn.d5e529" class="footnote"><sup class="footnote" id="d5e529">[2]</sup></a></p>
                      </li>
                      <li class="listitem">
                         <p>Autoritě časového razítka se posílá otisk hodnoty digitálního podpisu v elementu
-                           <code class="sgmltag-element">SignatureValue</code>.<a href="#ftn.d5e535" class="footnote"><sup class="footnote" id="d5e535">[3]</sup></a> Pro výpočet otisku musí být použit algoritmus z rodiny SHA-2.<a href="#ftn.d5e539" class="footnote"><sup class="footnote" id="d5e539">[4]</sup></a></p>
+                           <code class="sgmltag-element">SignatureValue</code>.<a href="#ftn.d5e534" class="footnote"><sup class="footnote" id="d5e534">[3]</sup></a> Pro výpočet otisku musí být použit algoritmus z rodiny SHA-2.<a href="#ftn.d5e538" class="footnote"><sup class="footnote" id="d5e538">[4]</sup></a></p>
                      </li>
                      <li class="listitem">
                         <p>Časové razítko obdržené od autority časového razítka musí být uloženo v elementu
@@ -1115,7 +1112,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                      </li>
                   </ol>
                </div>
-               <div class="example" id="d5e546">
+               <div class="example" id="d5e545">
                   <div class="example-title">Příklad 4. ISDOC s digitálními podpisy výstavce, příjemce a časovým razítkem</div>
                   <div class="example-contents"><pre class="programlisting">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;Invoice xmlns="http://isdoc.cz/namespace/2013" version="5.2.2"&gt;
@@ -1486,7 +1483,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   </ul>
                </div>
             </section>
-            <section class="section" id="d5e665">
+            <section class="section" id="d5e664">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1512,7 +1509,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   dodavateli aplikace.
                </p>
             </section>
-            <section class="section" id="d5e670">
+            <section class="section" id="d5e669">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1538,7 +1535,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   s ostatními řádky, musí se před zobrazením zaokrouhlit a opět dojde k porušení rovnice <em class="mathphrase">JC*PK=CC</em>.
                </p>
             </section>
-            <section class="section" id="d5e679">
+            <section class="section" id="d5e678">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1568,7 +1565,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   vhodné tyto položky normalizovat například na tvar „všechna písmena velká“.
                </p>
             </section>
-            <section class="section" id="d5e688">
+            <section class="section" id="d5e687">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1612,7 +1609,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   platnou v zemi vystavitele dokladu.
                </p>
             </section>
-            <section class="section" id="d5e712">
+            <section class="section" id="d5e711">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1661,7 +1658,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   budou záporně).
                </p>
             </section>
-            <section class="section" id="d5e736">
+            <section class="section" id="d5e735">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1685,7 +1682,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   jednoho dokladu.
                </p>
             </section>
-            <section class="section" id="d5e740">
+            <section class="section" id="d5e739">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1720,7 +1717,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   povšimnout, že tam nějaká uživatelská data jsou.
                </p>
             </section>
-            <section class="section" id="d5e746">
+            <section class="section" id="d5e745">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1741,7 +1738,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   nic.
                </p>
             </section>
-            <section class="section" id="d5e752">
+            <section class="section" id="d5e751">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1766,7 +1763,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </p>
                <p><em class="mathphrase">TaxTotal/TaxAmount = SUM(TaxSubtotal/TaxAmount)</em></p>
             </section>
-            <section class="section" id="d5e773">
+            <section class="section" id="d5e772">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1791,7 +1788,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                <p><em class="mathphrase">LegalMonetaryTotal/DifferenceTaxInclusiveAmount = SUM
                      (TaxSubTotal/DifferenceTaxInclusiveAmount)</em></p>
             </section>
-            <section class="section" id="d5e797">
+            <section class="section" id="d5e796">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1807,7 +1804,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   dokumentů ISDOC se musí vyrovnat s oběma způsoby.
                </p>
             </section>
-            <section class="section" id="d5e804">
+            <section class="section" id="d5e803">
                <div class="titlepage">
                   <div>
                      <div>
@@ -1827,7 +1824,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   obsahovat odpovídající částky v elementu <code class="sgmltag-element">NonTaxedDeposits</code>.
                </p>
             </section>
-            <section class="section" id="d5e813">
+            <section class="section" id="d5e812">
                <div class="titlepage">
                   <div>
                      <div>
@@ -2158,7 +2155,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
 <strong xmlns="" class="hl-tag" style="color: #000096">&lt;/sch:schema</strong></pre></section>
          <section xml:lang="cs" class="appendix" id="chagelog">
             <h2 class="title" style="clear: both">D. Změny oproti předchozím verzím</h2>
-            <section class="section" id="d5e845">
+            <section class="section" id="d5e844">
                <div class="titlepage">
                   <div>
                      <div>
@@ -2183,82 +2180,8 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   </ul>
                </div>
             </section>
-            <section class="section" id="d5e856">
-               <div class="titlepage">
-                  <div>
-                     <div>
-                        <h3 class="title">D.2. Změny oproti verzi 5.3.1 z 30.12.2011</h3>
-                     </div>
-                  </div>
-               </div>
-               <div class="itemizedlist">
-                  <ul class="itemizedlist" style="list-style-type: disc; ">
-                     <li class="listitem">
-                        <p>Změněn jmenný prostor na <code class="uri">http://isdoc.cz/namespace/2013</code></p>
-                     </li>
-                     <li class="listitem">
-                        <p>Odkazy na objednávky (<code class="sgmltag-element">OrderReference</code>), dodací listy (<code class="sgmltag-element">DeliveryNoteReference</code>) a
-                           původní doklady (<code class="sgmltag-element">OriginalDocumentReference</code>) se uvádějí jen globálně pro celou fakturu. U řádky může již být jen odkaz, který pomocí atributu ref směřuje na existující
-                           globální
-                           odkaz identifikovaný pomocí atributu id. Nad hodnotami v atributech id a ref schéma
-                           kontroluje referenční integritu.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Elementy <code class="sgmltag-element">VATApplicable</code> a <code class="sgmltag-element">ElectronicPossibilityAgreementReference</code> jsou ve schématu povinné
-                           (povinné jsou již od verze 5.3, povinnost však nebyla formálně popsána ve schématu).
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Upraveno pořadí podelementů uvnitř elementu <code class="sgmltag-element">TaxSubTotal</code> tak, aby bylo konzistentní.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Element <code class="sgmltag-element">OriginalDocumentReference</code> musí být vždy obalen v <code class="sgmltag-element">OriginalDocumentReferences</code>.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Přidán element <code class="sgmltag-element">ClientBankAccount</code> pro velké výstavce B2C faktur.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Přidány elementy <code class="sgmltag-element">SubDocumentType</code> a  <code class="sgmltag-element">SubDocumentTypeOrigin</code> pro jemnější klasifikaci dokumentů.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Přidány elementy <code class="sgmltag-element">EgovFlag</code>, <code class="sgmltag-element">FileReference</code>, <code class="sgmltag-element">ReferenceNumber</code>, <code class="sgmltag-element">ISDS_ID</code>,
-                           <code class="sgmltag-element">EgovClassifiers</code>, <code class="sgmltag-element">EgovClassifier</code>, <code class="sgmltag-element">ContractReferences</code>, <code class="sgmltag-element">ContractReference</code>,
-                           <code class="sgmltag-element">LastValidDate</code>, <code class="sgmltag-element">LastValidDateUnbounded</code>, <code class="sgmltag-element">ExternalOrderIssueDate</code>, <code class="sgmltag-element">ParagraphID</code>,
-                           <code class="sgmltag-element">SealSeriesID</code>.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>K elementu <code class="sgmltag-element">Payment</code> byl přidán nový atribut partialPayment, který může být použit k zakázání částečných plateb.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Pořadí elementů uvnitř elementu <code class="sgmltag-element">Invoice</code> bylo upraveno.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Element <code class="sgmltag-element">PartyTaxScheme</code> se může opakovat a u subjektu lze zadat více jeho identifikátorů (např. zároveň DIČ a IČ DPH pro slovenské společnosti).
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Do archivu (<code class="filename">.isdocx</code>) byla přidána povinnost používat
-                           manifest. Manifest je soubor určující, který soubor ISDOC z mnoha v archivu
-                           existujících je hlavní. Všechny ostatní jsou pak jen v pozici přílohy.
-                        </p>
-                     </li>
-                     <li class="listitem">
-                        <p>Přidán nový typ dokumentu neplatební dokument (element <code class="sgmltag-element">CommonDocument</code>).
-                        </p>
-                     </li>
-                  </ul>
-               </div>
-            </section>
          </section>
-         <section class="appendix" id="d5e915">
+         <section class="appendix" id="d5e855">
             <h2 class="title" style="clear: both">E. Možné změny pro další verze</h2>
             <p>Následující seznam obsahuje navrhované změny a rozšíření pro některou z dalších verzí
                ISDOC.
@@ -2276,7 +2199,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                </ul>
             </div>
          </section>
-         <div class="bibliography" id="d5e923">
+         <div class="bibliography" id="d5e863">
             <div class="titlepage">
                <div>
                   <div>
@@ -2317,7 +2240,7 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
                   <span class="title">COMMISSION DECISION of 25 February 2011 establishing minimum requirements for the
                      cross-border processing of documents signed electronically by competent authorities under
                      Directive 2006/123/EC of the European Parliament and of the Council on services in the
-                     internal market</span>. Dostupné na URL: <span class="bibliomisc"><a class="link" href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:053:0066:0072:EN:PDF" target="_top">http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:053:0066:0072:EN:PDF</a></span><a href="#ftn.d5e960" class="footnote"><sup class="footnote" id="d5e960">[5]</sup></a></p>
+                     internal market</span>. Dostupné na URL: <span class="bibliomisc"><a class="link" href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:053:0066:0072:EN:PDF" target="_top">http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:053:0066:0072:EN:PDF</a></span><a href="#ftn.d5e900" class="footnote"><sup class="footnote" id="d5e900">[5]</sup></a></p>
             </div>
             <div class="bibliomixed" id="bib.cba29">
                <p class="bibliomixed">[<abbr class="abbrev">ČBA-STD-29</abbr>] <span class="title">Standard elektronické
@@ -2344,29 +2267,29 @@ body { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4w
             </div>
          </div>
          <div class="footnotes"><br /><hr class="footnote-hr" />
-            <div id="ftn.d5e473" class="footnote">
-               <p><a href="#d5e473" class="para"><sup class="para">[1] </sup></a>Například nesmí začínat číslem, nesmí obsahovat mezery atd.
+            <div id="ftn.d5e472" class="footnote">
+               <p><a href="#d5e472" class="para"><sup class="para">[1] </sup></a>Například nesmí začínat číslem, nesmí obsahovat mezery atd.
                </p>
             </div>
-            <div id="ftn.d5e530" class="footnote">
-               <p><a href="#d5e530" class="para"><sup class="para">[2] </sup></a>Povinnost zahrnout podpisový certifikát do podpisu definuje forma XAdES-BES.
+            <div id="ftn.d5e529" class="footnote">
+               <p><a href="#d5e529" class="para"><sup class="para">[2] </sup></a>Povinnost zahrnout podpisový certifikát do podpisu definuje forma XAdES-BES.
                   Časové razítko ve formě XAdES-T musí splňovat i všechny požadavky na nižší formu
                   XAdES-BES (resp. XAdES-EPES).
                </p>
             </div>
-            <div id="ftn.d5e535" class="footnote">
-               <p><a href="#d5e535" class="para"><sup class="para">[3] </sup></a>Otisk se přitom počítá z elementu <code class="sgmltag-element">SignatureValue</code> včetně jeho obsahu
+            <div id="ftn.d5e534" class="footnote">
+               <p><a href="#d5e534" class="para"><sup class="para">[3] </sup></a>Otisk se přitom počítá z elementu <code class="sgmltag-element">SignatureValue</code> včetně jeho obsahu
                   nikoliv z binární reprezentace hodnoty digitálního podpisu. Před výpočtem otisku se
                   ještě provádí kanonizace. Viz sekce 7.3 <a class="xref" href="#bib.xades" title="ETSI TS 101 903 V1.4.1: XML Advanced Electronic Signatures (XAdES)">[<abbr class="abbrev">XAdES</abbr>]</a>.
                </p>
             </div>
-            <div id="ftn.d5e539" class="footnote">
-               <p><a href="#d5e539" class="para"><sup class="para">[4] </sup></a>V současné době většina autorit časového razítka v ČR podporuje pouze algoritmus
+            <div id="ftn.d5e538" class="footnote">
+               <p><a href="#d5e538" class="para"><sup class="para">[4] </sup></a>V současné době většina autorit časového razítka v ČR podporuje pouze algoritmus
                   SHA-256.
                </p>
             </div>
-            <div id="ftn.d5e960" class="footnote">
-               <p><a href="#d5e960" class="para"><sup class="para">[5] </sup></a>Kvůli chybám v českém překladu doporučujeme vycházet z anglické verze rozhodnutí
+            <div id="ftn.d5e900" class="footnote">
+               <p><a href="#d5e900" class="para"><sup class="para">[5] </sup></a>Kvůli chybám v českém překladu doporučujeme vycházet z anglické verze rozhodnutí
                   komise.
                </p>
             </div>
