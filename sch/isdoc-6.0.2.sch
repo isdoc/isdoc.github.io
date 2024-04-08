@@ -235,7 +235,7 @@
           faktury musí být stejné. Pokud atribut pro jednotku v rozpisu šarží/sériových čísel není
           uveden, tak se předpokládá, že je množství uvedeno ve stejné jednotce jako množství na
           řádce faktury. </sch:assert>
-            <sch:assert test="if (isdoc:InvoicedQuantity/@unitCode) then                                 every $q in isdoc:Item/isdoc:StoreBatches/isdoc:StoreBatch/isdoc:Quantity) satisfies $q/@unitCode = isdoc:InvoicedQuantity/@unitCode                               else true()">Jednotka v rozpisu všech šarží/sériových čísel (element StoreBatches) musí
+            <sch:assert test="if (isdoc:InvoicedQuantity/@unitCode) then every $q in isdoc:Item/isdoc:StoreBatches/isdoc:StoreBatch/isdoc:Quantity satisfies $q/@unitCode = isdoc:InvoicedQuantity/@unitCode else true()">Jednotka v rozpisu všech šarží/sériových čísel (element StoreBatches) musí
           být stejná jako jednotka pro množství na řádce faktury. Jednotky u šarží jedné řádky
           faktury musí být stejné. Pokud atribut pro jednotku v rozpisu šarží/sériových čísel není
           uveden, tak se předpokládá, že je množství uvedeno ve stejné jednotce jako množství na
